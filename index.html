@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <ul class="nav navbar-nav navbar-right"></ul> -->
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <script src="https://use.fontawesome.com/29afa01d4a.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />
 </head>
+
 <body>
-    Welcome
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#skills").toggle();
+            $("#skills-toggler").click(function () {
+                $("#skills").slideToggle("slow");
+            });
+            $("#more-about-me").toggle();
+            $("#more-about-me-toggler").click(function () {
+                $("#more-about-me").slideToggle("slow");
+            });
+        });
+    </script>
+
+
+    <!-- nav stuff -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">Sander Schulhoff</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Research/Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- name/card -->
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="display-4">About <img src="myHead.png" class="img-thumbnail float-right" style="width: 100px;"></h1>
+
+                    <br>
+                    <p class="lead">
+                        Hello, I am Sander Schulhoff. I am currently an undergraduate computer science
+                        student at
+                        University of Maryland doing research with the PINAFORE group. I am interested in natural
+                        language processing, reinforcement learning, and web development.
+                    </p>
+                    <a id="more-about-me-toggler" href="javascript:;">More about me <i class="fas fa-angle-double-down"></i></a>
+                    
+                    <div id="more-about-me" class="row">
+                        <div class="col">
+                            <br>
+                            Hi again, 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2">
+                    <br class="d-md-none">
+                    <h2 class="display-10">Contact</h2><br>
+                    
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/trigaten"><i class="fa fa-github fa-lg"></i></a>
+
+                    <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/sander-schulhoff"><i class="fa fa-linkedin fa-lg"></i></a>
+<br><br>
+                    <h5>Personal Email</h5>
+                    <a style="color: inherit;" href="mailto:sanderschulhoff@gmail.com"><i class="fas fa-envelope"></i>
+                        sanderschulhoff@gmail.com</a><br><br>
+                    <h5>College Email</h5>
+                    <a style="color: inherit;" href="mailto:sschulho@umd.edu"><i class="fas fa-envelope"></i> sschulho@umd.edu</a><br><br>
+
+                    <h5>Teacher Recommender System</h5>
+                    <a style="color: inherit;" href="TeacherRecSystem@gmail.com"><i class="fas fa-envelope"></i> TeacherRecSystem@gmail.com</a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><br>
+                    
+                    <a id="skills-toggler" href="javascript:;">Skills <i class="fas fa-angle-double-down"></i></a>
+                    
+                    <div id="skills" class="row">
+                        <div class="col-6"><br>
+                            <p>I use Python, Java, and Google Apps Script most often for work and school.</p>
+                            <p>
+                            <h5>Web Dev</h5>I have developed websites with HTML, Javscript, CSS, and
+                            MaterializeCSS and Bootstrap.
+                            I enjoy working with APIs like Wikipedia and Google Suites.</p>
+                            <p>
+                            <h5>Design</h5>I have worked with Adobe XD, Figma, Photoshop, Adobe Illustrator
+                            to develop a number of logos, miscellaneous art, and site designs. </p>
+                        </div>
+                        <div class="col-6">
+                            <h5>Other languages/tools/libraries I have worked with</h5>
+                            <p>
+                                PHP, MySQL, Bash, Objective-C, C++, C#, Eclipse, IntelliJ IDEA, PyCharm, 
+                                Visual Studio, VS Code, Atom, Juptyper Notebook(s), Google Colab, XCode,
+                                MAMP, SQLPro, PHPMyAdmin, Unity, GDrive Scripting Environment, Mongo DB,
+                                discord.js, discord.py
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-6">
+                <h2 id="projects">Projects</h2>
+                
+            </div>
+            <div class="col-12 col-sm-8 col-md-6">
+                <ul class="nav nav-pills mb-3 float-sm-right" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab" aria-controls="pills-web" aria-selected="true">Web</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-miscl-tab" data-toggle="pill" href="#pills-miscl" role="tab" aria-controls="pills-miscl" aria-selected="false">Miscl.</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-research-tab" data-toggle="pill" href="#pills-research" role="tab" aria-controls="pills-research" aria-selected="false">Research</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        
+        <br>
+        <div class="d-flex flex-row row">
+            <div class="d-flex flex-column col-sm-12 col-lg-8">
+                <img src="TRS.png" class="img-fluid">
+                <br>
+                
+                <p class="text-center"> <a href="https://trigaten.github.io/TeacherRecommenderSite/">Teacher Recommender
+                        System</a> (TRS)</p>
+            </div>
+            <div class="d-flex col-sm-12 col-lg-4 text-center">
+                <p>TRS serves as an end-to-end service to complete the process of matching students with their teacher
+                    recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
+                    send emails, make matches, and generate data reports. The <a
+                        href="Teacher Recommender System">website</a>
+                    is still under development.</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
