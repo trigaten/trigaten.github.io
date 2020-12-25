@@ -31,15 +31,39 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        var moreAboutOpen = false
+        var skillsOpen = false
         $(document).ready(function () {
-            $("#skills").toggle();
-            $("#skills-toggler").click(function () {
-                $("#skills").slideToggle("slow");
-            });
+
             $("#more-about-me").toggle();
             $("#more-about-me-toggler").click(function () {
                 $("#more-about-me").slideToggle("slow");
+                if (moreAboutOpen){
+                    $("#more-about-arrow").removeClass("fa-angle-up")
+                    $("#more-about-arrow").addClass("fa-angle-down")
+                }else{
+                    $("#more-about-arrow").addClass("fa-angle-up")
+                    $("#more-about-arrow").removeClass("fa-angle-down")
+                }
+                moreAboutOpen = !moreAboutOpen;
+
             });
+
+
+            $("#skills").toggle();
+            $("#skills-toggler").click(function () {
+                $("#skills").slideToggle("slow");
+                
+                if (skillsOpen){
+                    $("#skills-arrow").removeClass("fa-angle-up")
+                    $("#skills-arrow").addClass("fa-angle-down")
+                }else{
+                    $("#skills-arrow").addClass("fa-angle-up")
+                    $("#skills-arrow").removeClass("fa-angle-down")
+                }
+                skillsOpen = !skillsOpen;
+            });
+            
         });
     </script>
 
@@ -66,6 +90,7 @@
             </ul>
         </div>
     </nav>
+
     <!-- name/card -->
 
     <div class="jumbotron">
@@ -81,12 +106,13 @@
                         with the PINAFORE group. I am interested in natural
                         language processing, reinforcement learning, and web development.
                     </p>
-                    <a id="more-about-me-toggler" href="javascript:;">More about me <i class="fas fa-angle-double-down"></i></a>
+                    <a id="more-about-me-toggler" href="javascript:;">More <i id="more-about-arrow" class="fas fa-angle-down"></i></a>
                     
                     <div id="more-about-me" class="row">
                         <div class="col">
                             <br>
-                            Hi again, 
+                            Hi again, <br>
+                            
                         </div>
                     </div>
 
@@ -113,10 +139,14 @@
             <div class="row">
                 <div class="col-12"><br>
                     
-                    <a id="skills-toggler" href="javascript:;">Skills <i class="fas fa-angle-double-down"></i></a>
+                    <a id="skills-toggler" href="javascript:;">Skills <i id="skills-arrow" class="fas fa-angle-down"></i></a>
                     
-                    <div id="skills" class="row">
-                        <div class="col-6"><br>
+                    <div id="skills" class="row" style="padding-top: 20px;">
+                        <div class="divider"></div>
+
+                        <div class="col-6">
+                            
+                            <h5>Frequent Languages</h5>
                             <p>I use Python, Java, and Google Apps Script most often for work and school.</p>
                             <p>
                             <h5>Web Dev</h5>I have developed websites with HTML, Javscript, CSS, and
@@ -127,6 +157,16 @@
                             to develop a number of logos, miscellaneous art, and site designs. </p>
                         </div>
                         <div class="col-6">
+                            <h5>Machine Learning</h5>
+                            <p>
+                                I have gone through books like Deep Learning with Python Introduction to
+                                Reinforcement Learning (Sutton and Barto), and An Introduction to Information Theory.
+                                I enjoy experimenting with RL problems and hope to eventually apply what I learn to
+                                space travel, space mining, and planetary development.
+                            
+
+
+                            </p>
                             <h5>Other languages/tools/libraries I have worked with</h5>
                             <p>
                                 PHP, MySQL, Bash, Objective-C, C++, C#, Eclipse, IntelliJ IDEA, PyCharm, 
@@ -134,7 +174,7 @@
                                 MAMP, SQLPro, PHPMyAdmin, Unity, GDrive Scripting Environment, Mongo DB,
                                 discord.js, discord.py
                             </p>
-                        </div>
+                        </div></div>
                     </div>
                 </div>
             </div>
@@ -145,7 +185,12 @@
         <div class="row">
             <div class="col-12 col-sm-4 col-md-6">
                 <h2 id="projects">Projects</h2>
-                
+                <h6>Currently working on:</h6>
+                <ul>
+                    <li>Finishing development and beginning distribution of TRS system</li>
+                    <li>Diplomacy bot for <a href="https://www.aclweb.org/anthology/2020.acl-main.353/"> It Takes Two to Lie paper</a></li>
+                    <li>System design and hardware build (Raspberry Pi) for small business contract</li>
+                </ul>
             </div>
             <div class="col-12 col-sm-8 col-md-6">
                 <ul class="nav nav-pills mb-3 float-sm-right" id="pills-tab" role="tablist">
@@ -164,7 +209,7 @@
                   </ul>
             </div>
         </div>
-        
+        <hr>
         <br>
         <div class="d-flex flex-row row">
             <div class="d-flex flex-column col-sm-12 col-lg-8">
@@ -184,7 +229,18 @@
         </div>
 
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
 
+                </div>
+                <div class="col-md-6 align-bottom">
+                    <img src="bootstrap-solid.svg" width="30" height="30" alt=""> uilt with <img src="bootstrap-solid.svg" width="30" height="30" alt=""> ootstrap
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

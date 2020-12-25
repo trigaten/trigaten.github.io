@@ -1,5 +1,10 @@
-.container{
-    width:100%;
+.container-fluid{
+    padding-top:50px;
+    padding-bottom:50px;
+    /* background-color: grey; */
 }
-
 /* *{border: 1px solid #fff} */
+
+.container{
+   width: 100%;
+}
