@@ -9,63 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
+        integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
+        crossorigin="anonymous" />
 
-        <script src="https://use.fontawesome.com/29afa01d4a.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />
 </head>
 
 <body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        var moreAboutOpen = false
-        var skillsOpen = false
-        $(document).ready(function () {
-
-            $("#more-about-me").toggle();
-            $("#more-about-me-toggler").click(function () {
-                $("#more-about-me").slideToggle("slow");
-                if (moreAboutOpen){
-                    $("#more-about-arrow").removeClass("fa-angle-up")
-                    $("#more-about-arrow").addClass("fa-angle-down")
-                }else{
-                    $("#more-about-arrow").addClass("fa-angle-up")
-                    $("#more-about-arrow").removeClass("fa-angle-down")
-                }
-                moreAboutOpen = !moreAboutOpen;
-
-            });
-
-
-            $("#skills").toggle();
-            $("#skills-toggler").click(function () {
-                $("#skills").slideToggle("slow");
-                
-                if (skillsOpen){
-                    $("#skills-arrow").removeClass("fa-angle-up")
-                    $("#skills-arrow").addClass("fa-angle-down")
-                }else{
-                    $("#skills-arrow").addClass("fa-angle-up")
-                    $("#skills-arrow").removeClass("fa-angle-down")
-                }
-                skillsOpen = !skillsOpen;
-            });
-            
-        });
-    </script>
 
 
     <!-- nav stuff -->
@@ -82,14 +35,18 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Research/Experience</a>
+                    <a class="nav-link" href="media/Resume.pdf" target="_blank">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Work</a>
                 </li>
             </ul>
         </div>
     </nav>
+
 
     <!-- name/card -->
 
@@ -97,22 +54,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <h1 class="display-4">About <img src="myHead.png" class="img-thumbnail float-right" style="width: 100px;"></h1>
+                    <h1 class="display-4">About <img src="media/myHead.png" class="img-thumbnail float-right"
+                            style="width: 100px;"></h1>
 
                     <br>
                     <p class="lead">
                         Hello, I am Sander Schulhoff. I am currently a computer science
-                        student at the University of Maryland doing undergraduate research 
+                        student at the University of Maryland doing undergraduate research
                         with the PINAFORE group. I am interested in natural
                         language processing, reinforcement learning, and web development.
                     </p>
-                    <a id="more-about-me-toggler" href="javascript:;">More <i id="more-about-arrow" class="fas fa-angle-down"></i></a>
-                    
+                    <a id="more-about-me-toggler" href="javascript:;">More <i id="more-about-arrow"
+                            class="fas fa-angle-down"></i></a>
+
                     <div id="more-about-me" class="row">
                         <div class="col">
                             <br>
                             Hi again, <br>
-                            
+
                         </div>
                     </div>
 
@@ -120,36 +79,41 @@
                 <div class="col-sm-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2">
                     <br class="d-md-none">
                     <h2 class="display-10">Contact</h2><br>
-                    
-                    <a class="btn btn-social-icon btn-github" href="https://github.com/trigaten"><i class="fa fa-github fa-lg"></i></a>
 
-                    <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/sander-schulhoff"><i class="fa fa-linkedin fa-lg"></i></a>
-<br><br>
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/trigaten"><i
+                            class="fa fa-github fa-lg"></i></a>
+
+                    <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/sander-schulhoff"><i
+                            class="fa fa-linkedin fa-lg"></i></a>
+                    <br><br>
                     <h5>Personal Email</h5>
                     <a style="color: inherit;" href="mailto:sanderschulhoff@gmail.com"><i class="fas fa-envelope"></i>
                         sanderschulhoff@gmail.com</a><br><br>
                     <h5>College Email</h5>
-                    <a style="color: inherit;" href="mailto:sschulho@umd.edu"><i class="fas fa-envelope"></i> sschulho@umd.edu</a><br><br>
+                    <a style="color: inherit;" href="mailto:sschulho@umd.edu"><i class="fas fa-envelope"></i>
+                        sschulho@umd.edu</a><br><br>
 
                     <h5>Teacher Recommender System</h5>
-                    <a style="color: inherit;" href="TeacherRecSystem@gmail.com"><i class="fas fa-envelope"></i> TeacherRecSystem@gmail.com</a>
+                    <a style="color: inherit;" href="TeacherRecSystem@gmail.com"><i class="fas fa-envelope"></i>
+                        TeacherRecSystem@gmail.com</a>
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-12"><br>
-                    
-                    <a id="skills-toggler" href="javascript:;">Skills <i id="skills-arrow" class="fas fa-angle-down"></i></a>
-                    
+
+                    <a id="skills-toggler" href="javascript:;">Skills <i id="skills-arrow"
+                            class="fas fa-angle-down"></i></a>
+
                     <div id="skills" class="row" style="padding-top: 20px;">
                         <div class="divider"></div>
 
                         <div class="col-6">
-                            
+
                             <h5>Frequent Languages</h5>
                             <p>I use Python, Java, and Google Apps Script most often for work and school.</p>
                             <p>
-                            <h5>Web Dev</h5>I have developed websites with HTML, Javscript, CSS, and
+                            <h5>Web Dev</h5>I have developed websites with HTML, Javascript, JQuery, CSS, and
                             MaterializeCSS and Bootstrap.
                             I enjoy working with APIs like Wikipedia and Google Suites.</p>
                             <p>
@@ -163,72 +127,72 @@
                                 Reinforcement Learning (Sutton and Barto), and An Introduction to Information Theory.
                                 I enjoy experimenting with RL problems and hope to eventually apply what I learn to
                                 space travel, space mining, and planetary development.
-                            
+
 
 
                             </p>
                             <h5>Other languages/tools/libraries I have worked with</h5>
                             <p>
-                                PHP, MySQL, Bash, Objective-C, C++, C#, Eclipse, IntelliJ IDEA, PyCharm, 
+                                PHP, MySQL, Bash, Objective-C, C++, C#, Eclipse, IntelliJ IDEA, PyCharm,
                                 Visual Studio, VS Code, Atom, Juptyper Notebook(s), Google Colab, XCode,
                                 MAMP, SQLPro, PHPMyAdmin, Unity, GDrive Scripting Environment, Mongo DB,
-                                discord.js, discord.py
+                                discord.js, discord.py, Swift
                             </p>
-                        </div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
+    <!-- projects -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-4 col-md-6">
-                <h2 id="projects">Projects</h2>
+            <div class="col-12 col-sm-12 col-md-6">
+                <h2 id="projects">Work</h2>
                 <h6>Currently working on:</h6>
                 <ul>
                     <li>Finishing development and beginning distribution of TRS system</li>
-                    <li>Diplomacy bot for <a href="https://www.aclweb.org/anthology/2020.acl-main.353/"> It Takes Two to Lie paper</a></li>
+                    <li>Diplomacy bot for next iteration of <a
+                            href="https://www.aclweb.org/anthology/2020.acl-main.353/"> It Takes Two to Lie </a>paper
+                    </li>
                     <li>System design and hardware build (Raspberry Pi) for small business contract</li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-8 col-md-6">
-                <ul class="nav nav-pills mb-3 float-sm-right" id="pills-tab" role="tablist">
+            <div class="col-12 col-sm-12 col-md-6">
+                <ul class="nav nav-pills mb-3 float-md-right" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab" aria-controls="pills-web" aria-selected="true">Web</a>
+                        <a class="nav-link active" id="pills-professional-tab" data-toggle="pill"
+                            href="#pills-professional" role="tab" aria-controls="pills-professional"
+                            aria-selected="true">Professional</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="pills-miscl-tab" data-toggle="pill" href="#pills-miscl" role="tab" aria-controls="pills-miscl" aria-selected="false">Miscl.</a>
+                        <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab"
+                            aria-controls="pills-all" aria-selected="true">All</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="pills-research-tab" data-toggle="pill" href="#pills-research" role="tab" aria-controls="pills-research" aria-selected="false">Research</a>
+                        <a class="nav-link" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab"
+                            aria-controls="pills-web" aria-selected="true">Web</a>
                     </li>
-                  </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-miscl-tab" data-toggle="pill" href="#pills-miscl" role="tab"
+                            aria-controls="pills-miscl" aria-selected="false">Miscl.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-research-tab" data-toggle="pill" href="#pills-research" role="tab"
+                            aria-controls="pills-research" aria-selected="false">Research</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <hr>
         <br>
-        <div class="d-flex flex-row row">
-            <div class="d-flex flex-column col-sm-12 col-lg-8">
-                <img src="TRS.png" class="img-fluid">
-                <br>
-                
-                <p class="text-center"> <a href="https://trigaten.github.io/TeacherRecommenderSite/">Teacher Recommender
-                        System</a> (TRS)</p>
-            </div>
-            <div class="d-flex col-sm-12 col-lg-4 text-center">
-                <p>TRS serves as an end-to-end service to complete the process of matching students with their teacher
-                    recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
-                    send emails, make matches, and generate data reports. The <a
-                        href="Teacher Recommender System">website</a>
-                    is still under development.</p>
-            </div>
-        </div>
+
+        <!-- projects start -->
+        <div class="flex-row row project professional research"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center">Diplomacy Bot Changes (Fall 2020)</p><img src="media/Diplomacy.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>An extension to recent <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a> work (<a href="https://www.aclweb.org/anthology/2020.acl-main.353/">ACL Paper</a>), I worked on a Discord bot which facilitates player communication implementing a lie detection model to display predictions to players (model created by Denis Peskov). My change report can be seen <a href="media/PINAFORE_Summary.pdf" target="_blank">here</a>.</p><div class="mt-auto" style="margin-bottom: 10%;"><h5>Advised by Denis Peskov, Jordan Boyd-Graber</h5> <span class="badge badge-pill badge-python">Python</span> <span class="badge badge-pill badge-warning">Javascript</span></div></div><div class="container"><div><hr/></div></div></div><div class="flex-row row project professional research web"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center">Modulation data collection site (Fall 2020)</p><img src="media/Modulation.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>A <a href="https://github.com/trigaten/Autocomplete_Site_Form">website</a> built for a NLP project to collect data from users answering analogy questions while being provided with Wikipedia autocomplete suggestions. It makes use of the Wikipedia autocomplete API.</p><div class="mt-auto" style="margin-bottom: 10%;"><h5>Built for Denis Peskov</h5> <span class="badge badge-pill badge-warning">Javascript</span> <span class="badge badge-pill badge-success">HTML</span> <span class="badge badge-pill badge-primary">CSS</span></div></div><div class="container"><div><hr/></div></div></div><div class="flex-row row project miscl"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center"><a href='https://flyingpengun.itch.io/dither'>Dither</a> (Fall 2020)</p><img src="media/Dither.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>Dither is a 2D puzzle game made for <a href='https://academiccatalog.umd.edu/undergraduate/approved-courses/engl/'>ENGL290</a>, one of my UMD courses. You play as a computer processor moving around to solve logical puzzles.</p><div class="mt-auto" style="margin-bottom: 10%;"> <span class="badge badge-pill badge-python">Python</span></div></div><div class="container"><div><hr/></div></div></div><div class="flex-row row project professional web"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center"><a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Recommender System</a> (TRS) (Spring 2019-Present)</p><img src="media/TRS.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>TRS is as an end-to-end service to complete the process of matching students with their teacher recommenders for college. A couple thousands lines of Google Apps Scripts generate forms, send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019 and Beta is almost complete. The <a href="https://trigaten.github.io/TeacherRecommenderSite">website</a> is still under development.</p><div class="mt-auto" style="margin-bottom: 10%;"> <span class="badge badge-pill badge-success">HTML</span> <span class="badge badge-pill badge-primary">CSS</span> <span class="badge badge-pill badge-primary">MaterializeCSS</span> <span class="badge badge-pill badge-warning">Javascript</span> <span class="badge badge-pill badge-warning">Google Apps Scripts</span> <span class="badge badge-pill badge-info">1000+ lines of code</span></div></div><div class="container"><div><hr/></div></div></div><div class="flex-row row project professional web"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center"><a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)</p><img src="media/NPTG.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>A backend/business logic codebase of PHP functions for my highschool 'natural plant teaching gardens' website. Using Composer and Google Sheets API, data stored in the Sheet is accessed and displayed in the site. Users can search through plants using a simple custom engine relying on Levenstein word distances. Curl search protocol is used to scrape and save images of new plants added to the database. The frontend is still under development, but you can see a functional demo here':' <a href="http://nptg.herokuapp.com">demo</a>.</p><div class="mt-auto" style="margin-bottom: 10%;"> <span class="badge badge-pill badge-success">HTML</span> <span class="badge badge-pill badge-primary">CSS</span> <span class="badge badge-pill badge-warning">Javascript</span> <span class="badge badge-pill badge-info">1000+ lines of code</span></div></div><div class="container"><div><hr/></div></div></div><div class="flex-row row project miscl"><div class="flex-column col-sm-12 col-lg-8"><p class="text-center"><a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)</p><img src="media/Heart-Heist.png" class="img-fluid shadow-lg p-3 mb-5"></div><div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column"><p>A simple top down shooter game I wrote in XCode. Music and art made in Gravit Designer and Garage Band. Unfortunately, it is no longer on the App Store :(, but here is an old <a href="https://www.youtube.com/watch?v=YDOFR4E-Xmg">walkthrough</a>.</p><div class="mt-auto" style="margin-bottom: 10%;"> <span class="badge badge-pill badge-swift">Swift</span> <span class="badge badge-pill badge-obj-c">Objective-C</span></div></div><div class="container"><div><hr/></div></div></div>
 
     </div>
+
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -236,11 +200,99 @@
 
                 </div>
                 <div class="col-md-6 align-bottom">
-                    <img src="bootstrap-solid.svg" width="30" height="30" alt=""> uilt with <img src="bootstrap-solid.svg" width="30" height="30" alt=""> ootstrap
+                    <img src="media/bootstrap-solid.svg" width="30" height="30" alt=""> uilt with <img
+                        src="media/bootstrap-solid.svg" width="30" height="30" alt=""> ootstrap
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/29afa01d4a.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    var moreAboutOpen = false
+    var skillsOpen = false
+    $(document).ready(function () {
+        $(".miscl").hide();
+        $(".web").hide();
+        $(".research").hide();
+        $(".professional").show();
+        $("#more-about-me").toggle();
+        $("#more-about-me-toggler").click(function () {
+            $("#more-about-me").slideToggle("slow");
+            if (moreAboutOpen) {
+                $("#more-about-arrow").removeClass("fa-angle-up")
+                $("#more-about-arrow").addClass("fa-angle-down")
+            } else {
+                $("#more-about-arrow").addClass("fa-angle-up")
+                $("#more-about-arrow").removeClass("fa-angle-down")
+            }
+            moreAboutOpen = !moreAboutOpen;
+
+        });
+
+
+        $("#skills").toggle();
+        $("#skills-toggler").click(function () {
+            $("#skills").slideToggle("slow");
+
+            if (skillsOpen) {
+                $("#skills-arrow").removeClass("fa-angle-up")
+                $("#skills-arrow").addClass("fa-angle-down")
+            } else {
+                $("#skills-arrow").addClass("fa-angle-up")
+                $("#skills-arrow").removeClass("fa-angle-down")
+            }
+            skillsOpen = !skillsOpen;
+        });
+
+        $("#pills-all-tab").click(function () {
+            $(".project").slideDown();
+        })
+
+        $("#pills-web-tab").click(function () {
+            $(".miscl").slideUp();
+            $(".research").slideUp();
+            $(".professional").slideUp();
+            $(".web").slideDown();
+        })
+
+        $("#pills-miscl-tab").click(function () {
+            $(".research").slideUp();
+            $(".web").slideUp();
+            $(".professional").slideUp();
+            $(".miscl").slideDown();
+        })
+
+        $("#pills-research-tab").click(function () {
+            $(".miscl").slideUp();
+            $(".web").slideUp();
+            $(".professional").slideUp();
+            $(".research").slideDown();
+        })
+
+        $("#pills-professional-tab").click(function () {
+            $(".miscl").slideUp();
+            $(".web").slideUp();
+            $(".research").slideUp();
+            $(".professional").slideDown();
+        })
+
+    });
+</script>
 
 </html>

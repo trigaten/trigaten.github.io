@@ -1,0 +1,98 @@
+--- #DIPLOMACY BOT
+title: Diplomacy Bot Changes (Fall 2020)
+description: 
+  An extension to recent <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a> 
+  work (<a href="https://www.aclweb.org/anthology/2020.acl-main.353/">ACL Paper</a>), I worked on
+  a Discord bot which facilitates player communication implementing a lie detection model
+  to display predictions to players (model created by Denis Peskov). My change report can be
+  seen <a href="media/PINAFORE_Summary.pdf" target="_blank">here</a>.
+image: Diplomacy.png
+categories: 
+  - professional
+  - research
+tags: 
+  - Python
+  - Javascript
+note: Advised by Denis Peskov, Jordan Boyd-Graber
+
+--- #Modulation data collection site
+title: Modulation data collection site (Fall 2020)
+description: 
+  A <a href="https://github.com/trigaten/Autocomplete_Site_Form">website</a> built for a NLP project 
+  to collect data from users answering analogy questions while being provided with Wikipedia autocomplete
+  suggestions. It makes use of the Wikipedia autocomplete API.
+image: Modulation.png
+categories: 
+  - professional
+  - research
+  - web
+tags: 
+  - PHP
+  - Javascript
+  - HTML
+  - CSS
+note: Built for Denis Peskov
+
+--- #Dither
+title: <a href='https://flyingpengun.itch.io/dither'>Dither</a> (Fall 2020)
+description: Dither is a 2D puzzle game made for <a href='https://academiccatalog.umd.edu/undergraduate/approved-courses/engl/'>ENGL290</a>,
+  one of my UMD courses. You play as a computer processor moving around to solve logical puzzles.
+image: Dither.png
+categories: 
+  - miscl
+tags: 
+  - Python
+
+--- #TRS SYSTEM
+title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Recommender System</a> (TRS) (Spring 2019-Present)
+description: TRS is as an end-to-end service to complete the process of matching students with their teacher
+    recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
+    send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
+    and Beta is almost complete. The <a href="https://trigaten.github.io/TeacherRecommenderSite">website</a>
+    is still under development.
+image: TRS.png
+categories: 
+  - professional
+  - web
+tags: 
+  - HTML
+  - CSS
+  - MaterializeCSS
+  - Javascript
+  - Google Apps Scripts
+  - 1000+ lines of code
+
+
+
+--- #NPTG CODEBASE
+title: <a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)
+description: A backend/business logic codebase of PHP functions for my highschool 'natural plant teaching gardens'
+  website. Using Composer and Google Sheets API, data stored in the Sheet is accessed and displayed in
+  the site. Users can search through plants using a simple custom engine relying on Levenstein word
+  distances. Curl search protocol is used to scrape and save images of new plants added to the
+  database.
+  The frontend is still under development, but you can see a functional demo here':' <a
+      href="http://nptg.herokuapp.com">demo</a>.
+image: NPTG.png
+categories: 
+  - professional
+  - web
+tags: 
+  - HTML
+  - CSS
+  - Javascript
+  - PHP
+  - 1000+ lines of code
+
+--- #HEART HEIST
+title: <a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)
+description: A simple top down shooter game I wrote in XCode. Music and art made in Gravit Designer and
+                    Garage Band. Unfortunately, it is no longer on the App Store :(, but here is an old
+                      <a href="https://www.youtube.com/watch?v=YDOFR4E-Xmg">walkthrough</a>.
+image: Heart-Heist.png
+categories: 
+  - miscl
+tags: 
+  - Swift
+  - Objective-C
+

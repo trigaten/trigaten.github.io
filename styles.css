@@ -4,7 +4,35 @@
     /* background-color: grey; */
 }
 /* *{border: 1px solid #fff} */
-
+div{
+    /* border: 1px solid red; */
+}
 .container{
    width: 100%;
 }
+
+.badge-php{
+    background-color: darkgreen;
+    color: white;
+}
+
+.badge-python{
+    background-color: purple;
+    color: white;
+}
+
+.badge-swift{
+    background-color: lightblue;
+    color: white;
+}
+
+.badge-obj-c{
+    background-color: darkblue;
+    color: white;
+}
+
+/* hr {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  } */
