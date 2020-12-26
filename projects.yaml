@@ -3,7 +3,7 @@ title: Diplomacy Bot Changes (Fall 2020)
 description: 
   An extension to recent <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a> 
   work (<a href="https://www.aclweb.org/anthology/2020.acl-main.353/">ACL Paper</a>), I worked on
-  a Discord bot which facilitates player communication implementing a lie detection model
+  a Discord bot which facilitates player communication. I implemented a lie detection model
   to display predictions to players (model created by Denis Peskov). My change report can be
   seen <a href="media/PINAFORE_Summary.pdf" target="_blank">here</a>.
 image: Diplomacy.png
