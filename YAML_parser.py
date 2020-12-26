@@ -1,10 +1,4 @@
 import yaml
-# <div class="mt-auto" style="margin-bottom: 10%;">
-#                     <h6>Advised by Denis Peskov, Jordan Boyd-Graber</h5>
-#                     <span class="badge badge-pill badge-swift">Python</span>
-#                     <span class="badge badge-pill badge-obj-c">Javascript</span>
-
-#                 </div>
 def getTag(tag):
     if tag == 'Swift':
         return ' <span class="badge badge-pill badge-swift">Swift</span>'
@@ -41,7 +35,7 @@ for d in dictionaries:
     result+= '</div>'
     result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column">'
     result+= r'<p>' + d['description'] + '</p>'
-    result+= r'<div class="mt-auto" style="margin-bottom: 10%;">'
+    result+= r'<div class="mt-auto" style="margin-bottom: 20%;">'
     if 'note' in d:
         result+= r'<h5>' + d['note'] + '</h5>'
     for tag in d['tags']:
