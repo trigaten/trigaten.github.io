@@ -1,3 +1,4 @@
+# Generates HTML for projects section based on projects.yaml
 import yaml
 def getTag(tag):
     if tag == 'Swift':
