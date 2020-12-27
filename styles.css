@@ -11,24 +11,54 @@ div{
    width: 100%;
 }
 
+.badge-materialize-css{
+    background-color: rgb(232, 100, 105);
+    color: rba(255, 255, 255);
+}
+
+.badge-bootstrap{
+    background-color: rgb(77, 48, 108);
+    color: rgb(247, 247, 247);
+}
+
 .badge-php{
-    background-color: darkgreen;
-    color: white;
+    background-color: rgb(108, 106, 163);
+    color: rgb(0, 0, 0);
 }
 
 .badge-python{
-    background-color: purple;
-    color: white;
+    background-color: rgb(66, 112, 164);
+    color: rgb(249, 224, 93);
 }
 
 .badge-swift{
-    background-color: lightblue;
-    color: white;
+    background-color: rgb(240, 69, 44);
+    color: rgb(247, 247, 247);
 }
 
 .badge-obj-c{
-    background-color: darkblue;
-    color: white;
+    background-color: rgb(36, 97, 161);
+    color: rgb(255, 255, 255);
+}
+
+.badge-javascript{
+    background-color: rgb(239, 222, 48);
+    color: rgb(0, 0, 0);
+}
+
+.badge-html{
+    background-color: rgb(213, 69, 38);
+    color: rgb(247, 247, 247);
+}
+
+.badge-css{
+    background-color: rgb(60, 53, 214);
+    color: rgb(247, 247, 247);
+}
+
+.badge-google-apps-scripts{
+    background-color: rgb(42, 155, 74);
+    color: rgb(247, 247, 247);
 }
 
 html {

@@ -6,17 +6,17 @@ def getTag(tag):
     elif tag == "Objective-C":
         return ' <span class="badge badge-pill badge-obj-c">Objective-C</span>'
     elif tag == 'Javascript':
-        return ' <span class="badge badge-pill badge-warning">Javascript</span>'
+        return ' <span class="badge badge-pill badge-javascript">Javascript</span>'
     elif tag == 'Python':
         return ' <span class="badge badge-pill badge-python">Python</span>'
     elif tag == 'CSS':
-        return ' <span class="badge badge-pill badge-primary">CSS</span>'
+        return ' <span class="badge badge-pill badge-css">CSS</span>'
     elif tag == 'HTML':
-        return ' <span class="badge badge-pill badge-success">HTML</span>'
+        return ' <span class="badge badge-pill badge-html">HTML</span>'
     elif tag == "MaterializeCSS":
-        return ' <span class="badge badge-pill badge-primary">MaterializeCSS</span>'
+        return ' <span class="badge badge-pill badge-materialize-css">MaterializeCSS</span>'
     elif tag == 'Google Apps Scripts':
-        return ' <span class="badge badge-pill badge-warning">Google Apps Scripts</span>'
+        return ' <span class="badge badge-pill badge-google-apps-scripts">Google Apps Scripts</span>'
     elif tag == '1000+ lines of code':
         return ' <span class="badge badge-pill badge-info">1000+ lines of code</span>'
     return ''

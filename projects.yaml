@@ -66,12 +66,13 @@ tags:
 
 --- #NPTG CODEBASE
 title: <a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)
-description: A backend/business logic codebase of PHP functions for my highschool 'natural plant teaching gardens'
+description: >
+  A backend/business logic codebase of PHP functions for my highschool 'natural plant teaching gardens'
   website. Using Composer and Google Sheets API, data stored in the Sheet is accessed and displayed in
   the site. Users can search through plants using a simple custom engine relying on Levenstein word
   distances. Curl search protocol is used to scrape and save images of new plants added to the
   database.
-  The frontend is still under development, but you can see a functional demo here':' <a
+  The frontend is still under development, but you can see a functional demo here: <a
       href="http://nptg.herokuapp.com">demo</a>.
 image: NPTG.png
 categories: 
