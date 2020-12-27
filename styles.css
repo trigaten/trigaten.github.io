@@ -3,7 +3,7 @@
     padding-bottom:50px;
     /* background-color: grey; */
 }
-/* *{border: 1px solid #fff} */
+
 div{
     /* border: 1px solid red; */
 }
@@ -31,8 +31,6 @@ div{
     color: white;
 }
 
-/* hr {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  } */
+html {
+    scroll-behavior: smooth;
+}

@@ -35,8 +35,8 @@ for d in dictionaries:
     result+= r'<img src="media/' + d['image'] + r'" class="img-fluid shadow-lg p-3 mb-5">' 
     result+= '</div>'
     result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column">'
-    result+= r'<p>' + d['description'] + '</p>'
-    result+= r'<div class="mt-auto" style="margin-bottom: 20%;">'
+    result+= r'<p  style="padding-top: 50px;">' + d['description'] + '</p>'
+    result+= r'<div class="mt-auto" style="padding-bottom: 50px;">'
     if 'note' in d:
         result+= r'<h5>' + d['note'] + '</h5>'
     for tag in d['tags']:
