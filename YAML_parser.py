@@ -17,6 +17,8 @@ def getTag(tag):
         return ' <span class="badge badge-pill badge-materialize-css">MaterializeCSS</span>'
     elif tag == 'Google Apps Scripts':
         return ' <span class="badge badge-pill badge-google-apps-scripts">Google Apps Scripts</span>'
+    elif tag == 'Java':
+        return ' <span class="badge badge-pill badge-java">Java</span>'
     elif tag == '1000+ lines of code':
         return ' <span class="badge badge-pill badge-info">1000+ lines of code</span>'
     return ''
@@ -32,9 +34,9 @@ for d in dictionaries:
     result+= r'">'
     result+= r'<div class="flex-column col-sm-12 col-lg-8">'
     result+= r'<p class="text-center">' + d['title'] + '</p>'
-    result+= r'<img src="media/' + d['image'] + r'" class="img-fluid">' 
+    result+= d['image']
     result+= '</div>'
-    result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column">'
+    result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex flex-column">'
     result+= r'<p>' + d['description'] + '</p>'
     result+= r'<div class="mt-auto">'
     if 'note' in d:

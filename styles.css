@@ -26,6 +26,11 @@
     color: rgb(0, 0, 0);
 }
 
+.badge-java{
+    background-color: rgb(232, 232, 232);
+    color: rgb(26, 104, 127);
+}
+
 .badge-python{
     background-color: rgb(66, 112, 164);
     color: rgb(249, 224, 93);
