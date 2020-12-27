@@ -32,11 +32,11 @@ for d in dictionaries:
     result+= r'">'
     result+= r'<div class="flex-column col-sm-12 col-lg-8">'
     result+= r'<p class="text-center">' + d['title'] + '</p>'
-    result+= r'<img src="media/' + d['image'] + r'" class="img-fluid shadow-lg p-3 mb-5">' 
+    result+= r'<img src="media/' + d['image'] + r'" class="img-fluid">' 
     result+= '</div>'
     result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex align-items-end flex-column">'
-    result+= r'<p  style="padding-top: 50px;">' + d['description'] + '</p>'
-    result+= r'<div class="mt-auto" style="padding-bottom: 50px;">'
+    result+= r'<p>' + d['description'] + '</p>'
+    result+= r'<div class="mt-auto">'
     if 'note' in d:
         result+= r'<h5>' + d['note'] + '</h5>'
     for tag in d['tags']:
