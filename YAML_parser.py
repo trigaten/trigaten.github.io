@@ -19,8 +19,8 @@ def getTag(tag):
         return ' <span class="badge badge-pill badge-google-apps-scripts">Google Apps Scripts</span>'
     elif tag == 'Java':
         return ' <span class="badge badge-pill badge-java">Java</span>'
-    elif tag == 'Wrote 1000+ lines of code':
-        return ' <span class="badge badge-pill badge-info">1000+ lines of code</span>'
+    elif tag == '1000+ lines of code':
+        return ' <span class="badge badge-pill badge-info">Wrote 1000+ lines of code</span>'
     return ''
 
 
