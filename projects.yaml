@@ -49,7 +49,8 @@ description: TRS is as an end-to-end service to complete the process of matching
     recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
     send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
     and Beta is almost complete. The <a href="https://trigaten.github.io/TeacherRecommenderSite">website</a>
-    is still under development.
+    is still under development. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
+    various other GAS features. The frontend and website are built with <a href="https://materializecss.com">MaterializeCSS</a>.
 image: <img src="media/TRS.png" class="img-fluid">
 categories: 
   - professional
