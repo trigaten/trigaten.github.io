@@ -71,7 +71,8 @@
                         at the University of Maryland and doing undergraduate research
                         with the PINAFORE group (PI: <a href="http://users.umiacs.umd.edu/~jbg/">Jordan Boyd-Graber</a>,
                         Advisor: <a href="https://denis.ai">Denis Peskov</a>). I am interested in natural
-                        language processing, reinforcement learning, and user interface creation.
+                        language processing, reinforcement learning, and user interface creation. I plan to graduate with a
+                        <a href="https://www.cs.umd.edu/">CMSC</a> major (<a href="https://undergrad.cs.umd.edu/machine-learning-degree-requirements">machine learning specialization</a>) and a minor in <a href="https://robotics.umd.edu/minor">robotics</a>.
                     </p>
                     <!-- <a id="more-about-me-toggler" href="javascript:;">More <i id="more-about-arrow"
                             class="fas fa-angle-down"></i></a> -->
@@ -188,6 +189,10 @@
                     <li class="nav-item">
                         <a class="nav-link" id="pills-research-tab" data-toggle="pill" href="#pills-research" role="tab"
                             aria-controls="pills-research" aria-selected="false">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-machine-learning-tab" data-toggle="pill" href="#pills-machine-learning" role="tab"
+                            aria-controls="pills-machine-learning" aria-selected="false">Machine Learning</a>
                     </li>
                 </ul>
             </div>
@@ -307,6 +312,17 @@
         })
 
         $("#pills-professional-tab").click(function () {
+            $('.project').each(function () {
+                console.log($(this))
+                if (this.classList.contains('professional')) {
+                    $(this).slideDown();
+                } else {
+                    $(this).slideUp();
+                }
+            });
+        })
+
+        $("#pills-machine-learning-tab").click(function () {
             $('.project').each(function () {
                 console.log($(this))
                 if (this.classList.contains('professional')) {
