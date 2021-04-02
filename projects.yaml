@@ -43,15 +43,42 @@ categories:
 tags: 
   - Python
 
+--- #TRS Website
+title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>TRS Website</a> (Fall 2020)
+description: A pretty basic static website I built for TRS. 
+image: <img src="media/TRS-Site.png" class="img-fluid">
+categories: 
+  - professional
+  - web
+tags: 
+  - HTML
+  - CSS
+  - MaterializeCSS
+  - Javascript
+
+  --- #My Website
+title: <a href='https://trigaten.github.io'>My Website</a> (Fall 2020)
+description: A pretty basic static website I built for myself. I wrote some custom HTML
+scripts to generate the HTML code for the projects section. It reads all the project info
+from a YAML file for easy editing.
+image: <img src="media/my-site.png" class="img-fluid">
+categories: 
+  - professional
+  - web
+tags: 
+  - HTML
+  - CSS
+  - Bootstrap
+  - Javascript
+
 --- #TRS SYSTEM
 title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Recommender System</a> (TRS) (Spring 2019-Present)
 description: TRS is as an end-to-end service to complete the process of matching students with their teacher
     recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
     send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
-    and Beta is almost complete. The <a href="https://trigaten.github.io/TeacherRecommenderSite">website</a>
-    is still under development. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
+    and Beta is under Google review for publication. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
     various other GAS features. The frontend and website are built with <a href="https://materializecss.com">MaterializeCSS</a>.
-image: <img src="media/TRS.png" class="img-fluid">
+image: <iframe width="100" height="100" src="//www.youtube.com/embed/ENk25xw0IA8?rel=0" frameborder="0" allowfullscreen=""></iframe>
 categories: 
   - professional
   - web
@@ -62,8 +89,6 @@ tags:
   - Javascript
   - Google Apps Scripts
   - 1000+ lines of code
-
-
 
 --- #NPTG CODEBASE
 title: <a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a> (Spring 2019)
