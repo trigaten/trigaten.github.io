@@ -56,11 +56,11 @@ tags:
   - MaterializeCSS
   - Javascript
 
-  --- #My Website
+--- #My Website
 title: <a href='https://trigaten.github.io'>My Website</a> (Fall 2020)
 description: A pretty basic static website I built for myself. I wrote some custom HTML
-scripts to generate the HTML code for the projects section. It reads all the project info
-from a YAML file for easy editing.
+  scripts to generate the HTML code for the projects section. It reads all the project info
+  from a YAML file for easy editing.
 image: <img src="media/my-site.png" class="img-fluid">
 categories: 
   - professional
@@ -78,7 +78,7 @@ description: TRS is as an end-to-end service to complete the process of matching
     send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
     and Beta is under Google review for publication. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
     various other GAS features. The frontend and website are built with <a href="https://materializecss.com">MaterializeCSS</a>.
-image: <iframe width="100" height="100" src="//www.youtube.com/embed/ENk25xw0IA8?rel=0" frameborder="0" allowfullscreen=""></iframe>
+image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="//www.youtube.com/embed/ENk25xw0IA8?rel=0" allowfullscreen></iframe></div>
 categories: 
   - professional
   - web
