@@ -71,6 +71,21 @@ tags:
   - Bootstrap
   - Javascript
 
+--- #Simple continuous neural cross entropy
+title: <a href='https://www.youtube.com/embed/DVIzi8_DMWQ'>Simple Continuous Neural Cross-Entropy in Project Malmo</a> (Summer 2020)
+description: A draft of a video describing the training process of a simple (Pytorch) deep learning agent in Project Malmo I created for some advisors (<a href="https://chronic-coder.com/">Christopher Kok</a>, 
+  <a href="https://lugus-intelligence.com/">Ignacio Raposo</a>) from <a href="https://chronic-coder.com/">Chronic Coder Academy</a> over the summer after highschool.
+  After reading <a href="http://incompleteideas.net/book/the-book.html">Intro to RL by Sutton and Barto</a> and some of <a href="https://www.packtpub.com/product/deep-reinforcement-learning-hands-on/9781788834247">Deep RL Hands On</a>
+  I wanted to apply RL to a simple situation in project Malmo. I used this videomaking process to learn Blender and <a href="https://github.com/3b1b/manim">Manim</a> 
+  (<a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3b1b's animation library</a>). 
+
+image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="https://www.youtube.com/embed/DVIzi8_DMWQ" allowfullscreen></iframe></div>
+categories: 
+  - machine-learning
+  - miscl
+tags: 
+  - Python
+
 --- #TRS SYSTEM
 title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Recommender System</a> (TRS) (Spring 2019-Present)
 description: TRS is as an end-to-end service to complete the process of matching students with their teacher
