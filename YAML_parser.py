@@ -40,7 +40,7 @@ for d in dictionaries:
     result+= r'<p class="text-center">' + d['title'] + '</p>'
     result+= d['image']
     result+= '</div>'
-    result+= r'<div class="col-sm-12 col-lg-4 text-center d-flex flex-column">'
+    result+= r'<div class="col-sm-12 col-lg-4 d-flex flex-column">'
     result+= r'<p>' + d['description'] + '</p>'
     result+= r'<div class="mt-auto">'
     if 'note' in d:
@@ -48,7 +48,7 @@ for d in dictionaries:
     for tag in d['tags']:
         result+= getTag(tag)
     result+= '</div></div>'
-    result+= '<div class="container"><div><hr/></div></div></div>'
+    result+= '<div class="container"><div><hr style="height:1px; background-color:black"/></div></div></div>'
 print(result)
 
 
