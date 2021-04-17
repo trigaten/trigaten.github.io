@@ -45,7 +45,7 @@ tags:
 
 --- #TRS Website
 title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>TRS Website</a> (Fall 2020)
-description: A pretty basic static website I built for TRS. 
+description: A pretty basic responsive website I built for TRS. 
 image: <img src="media/TRS-Site.png" class="img-fluid">
 categories: 
   - professional
@@ -58,7 +58,7 @@ tags:
 
 --- #My Website
 title: <a href='https://trigaten.github.io'>My Website</a> (Fall 2020)
-description: A pretty basic static website I built for myself. I wrote some custom HTML
+description: A pretty basic responsive website I built for myself. I wrote some custom HTML
   scripts to generate the HTML code for the projects section. It reads all the project info
   from a YAML file for easy editing.
 image: <img src="media/my-site.png" class="img-fluid">
@@ -91,7 +91,7 @@ title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Reco
 description: TRS is as an end-to-end service to complete the process of matching students with their teacher
     recommenders for college. A couple thousands lines of Google Apps Scripts generate forms,
     send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
-    and Beta is under Google review for publication. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
+    and a much improved version has been published <a href="https://workspace.google.com/marketplace/app/teacher_recommender_system/410900919077">here<a> on the Google Workspace Marketplace. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
     various other GAS features. The frontend and website are built with <a href="https://materializecss.com">MaterializeCSS</a>.
 image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="//www.youtube.com/embed/ENk25xw0IA8?rel=0" allowfullscreen></iframe></div>
 categories: 
