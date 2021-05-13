@@ -1,5 +1,20 @@
---- #DIPLOMACY BOT
+--- #DIPLOMACY BOT V2 
 title: Diplomacy Bot Changes (Fall 2020)
+description: 
+  As an extension to my last extension of the Discord bot, I implemented a bunch of new features.
+  See my change report <a href="media/Final_Report_Schulhoff_Spring2021.pdf" target="_blank">here</a>. 
+image:  <img src="media/uncertain-msg.png" class="img-fluid">
+categories: 
+  - professional
+  - research
+  - machine-learning
+tags: 
+  - Python
+  - Javascript
+note: Advised by Denis Peskov, Jordan Boyd-Graber
+
+--- #DIPLOMACY BOT
+title: Diplomacy Bot Changes V2 (Spring 2021)
 description: 
   An extension to recent <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a> 
   work (<a href="https://www.aclweb.org/anthology/2020.acl-main.353/">ACL Paper</a>), I worked on
@@ -10,6 +25,7 @@ image:  <img src="media/Diplomacy.png" class="img-fluid">
 categories: 
   - professional
   - research
+  - machine-learning
 tags: 
   - Python
   - Javascript
