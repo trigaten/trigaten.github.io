@@ -1,0 +1,173 @@
+
+#DIPLOMACY BOT V2
+- title: Diplomacy Bot Changes V2
+  description: 
+    As an extension to my last extension of the Discord bot, I implemented a bunch of new features.
+    See my change report <a href="assets/media/Final_Report_Schulhoff_Spring2021.pdf" target="_blank">here</a>. 
+    
+  image:  <img src="assets/media/uncertain-msg.png" class="img-fluid">
+  categories: 
+    - professional
+    - research
+    - machine-learning
+  tags: 
+    - Python
+    - Javascript
+  note: Advised by Denis Peskov, Jordan Boyd-Graber
+  date: Spring 2021
+
+#DIPLOMACY BOT
+- title: Diplomacy Bot Changes
+  description: 
+    An extension to recent <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a> 
+    work (<a href="https://www.aclweb.org/anthology/2020.acl-main.353/">ACL Paper</a>), I worked on
+    a Discord bot which facilitates player communication. I implemented a lie detection model
+    to display predictions to players (model created by Denis Peskov). My change report can be
+    seen <a href="assets/media/PINAFORE_Summary.pdf" target="_blank">here</a>.
+  image:  <img src="assets/media/Diplomacy.png" class="img-fluid">
+  categories: 
+    - professional
+    - research
+    - machine-learning
+  tags: 
+    - Python
+    - Javascript
+  note: Advised by Denis Peskov, Jordan Boyd-Graber
+  date: (Fall 2020)
+
+#Modulation data collection site
+- title: Modulation data collection site
+  description: 
+    A <a href="https://github.com/trigaten/Autocomplete_Site_Form">website</a> built for a NLP project 
+    to collect data from users answering analogy questions while being provided with Wikipedia autocomplete
+    suggestions. It makes use of the Wikipedia autocomplete API.
+  image:  <img src="assets/media/Modulation.png" class="img-fluid">
+  categories: 
+    - professional
+    - research
+    - web
+  tags: 
+    - PHP
+    - Javascript
+    - HTML
+    - CSS
+  note: Built for Denis Peskov
+  date: Fall 2020
+
+#Dither
+- title: <a href='https://flyingpengun.itch.io/dither'>Dither</a>
+  description: Dither is a 2D puzzle game made for <a href='https://academiccatalog.umd.edu/undergraduate/approved-courses/engl/'>ENGL290</a>,
+    one of my UMD courses. You play as a computer processor moving around to solve logical puzzles.
+  image:  <img src="assets/media/Dither.png" class="img-fluid">
+  categories: 
+    - miscl
+  tags: 
+    - Python
+  date: Fall 2020
+
+#TRS Website
+- title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>TRS Website</a>
+  description: A pretty basic responsive website I built for TRS. 
+  image: <img src="assets/media/TRS-Site.png" class="img-fluid">
+  categories: 
+    - professional
+    - web
+  tags: 
+    - HTML
+    - CSS
+    - MaterializeCSS
+    - Javascript
+  date: Fall 2020
+
+#My Website
+- title: <a href='https://trigaten.github.io'>My Website</a>
+  description: A pretty basic responsive website I built for myself. I recently switched to
+    Jekyll for content management instead of a Python script I wrote which produced HTML.
+
+  image: <img src="assets/media/my-site.png" class="img-fluid">
+  categories: 
+    - professional
+    - web
+  tags: 
+    - HTML
+    - CSS
+    - Bootstrap
+    - Javascript
+    - Jekyll
+  date: Fall 2020
+
+#Simple continuous neural cross entropy
+- title: <a href='https://www.youtube.com/embed/DVIzi8_DMWQ'>Simple Continuous Neural Cross-Entropy in Project Malmo</a>
+  description: A draft of a video describing the training process of a simple (Pytorch) deep learning agent in Project Malmo I created for some advisors (<a href="https://chronic-coder.com/">Christopher Kok</a>, 
+    <a href="https://lugus-intelligence.com/">Ignacio Raposo</a>) from <a href="https://chronic-coder.com/">Chronic Coder Academy</a> over the summer after highschool.
+    After reading <a href="http://incompleteideas.net/book/the-book.html">Intro to RL by Sutton and Barto</a> and some of <a href="https://www.packtpub.com/product/deep-reinforcement-learning-hands-on/9781788834247">Deep RL Hands On</a>
+    I wanted to apply RL to a simple situation in project Malmo. I used this videomaking process to learn Blender and <a href="https://github.com/3b1b/manim">Manim</a> 
+    (<a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3b1b's animation library</a>). 
+
+  image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="https://www.youtube.com/embed/DVIzi8_DMWQ" allowfullscreen></iframe></div>
+  categories: 
+    - machine-learning
+    - miscl
+  tags: 
+    - Python
+  date: Summer 2020
+
+#TRS SYSTEM
+- title: <a href='https://trigaten.github.io/TeacherRecommenderSite/'>Teacher Recommender System</a> (TRS)
+  description: TRS is as an end-to-end service to complete the process of matching students with their teacher
+      recommenders for college. A couple thousands lines of Google Apps Script generate forms,
+      send emails, make matches, and generate data reports. The Alpha version of TRS was sold in 2019
+      and a much improved version has been published <a href="https://workspace.google.com/marketplace/app/teacher_recommender_system/410900919077">here<a> on the Google Workspace Marketplace. The codebase makes use of scriplets, HTMLService, frontend/backend javascript/GAS, and
+      various other GAS features. The frontend and website are built with <a href="https://materializecss.com">MaterializeCSS</a>.
+  image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="//www.youtube.com/embed/ENk25xw0IA8?rel=0" allowfullscreen></iframe></div>
+  categories: 
+    - professional
+    - web
+  tags: 
+    - HTML
+    - CSS
+    - MaterializeCSS
+    - Javascript
+    - Google Apps Script
+    - 1000+ lines of code
+  date: Spring 2019-Present
+
+#NPTG CODEBASE
+- title: <a href="https://github.com/trigaten/Native-Plant-Garden">NPTG Code Base</a>
+  description: >
+    A backend/business logic codebase of PHP functions for my highschool 'natural plant teaching gardens'
+    website. Using Composer and Google Sheets API, data stored in the Sheet is accessed and displayed in
+    the site. Users can search through plants using a simple custom engine relying on Levenstein word
+    distances. Curl search protocol is used to scrape and save images of new plants added to the
+    database.
+    The frontend is still under development, but you can see a functional demo here: <a
+        href="http://nptg.herokuapp.com">demo</a>.
+  image:  <img src="assets/media/NPTG.png" class="img-fluid">
+  categories: 
+    - professional
+    - web
+  tags: 
+    - HTML
+    - CSS
+    - Javascript
+    - PHP
+    - 1000+ lines of code
+  date: Spring 2019
+
+#HEART HEIST
+- title: <a href="https://appadvice.com/app/heart-heist/1439502075">Heart Heist</a>
+  description: A simple top down shooter game I wrote in XCode. Music and art made in Gravit Designer and
+                      Garage Band. Unfortunately, it is no longer on the App Store :(. Some of the textures 
+                        were generated by scripts I wrote in Java. 
+  image: <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YDOFR4E-Xmg" allowfullscreen></iframe>
+        </div>
+  categories: 
+    - miscl
+  tags: 
+    - Swift
+    - Obj-C
+    - Java
+    - 1000+ lines of code
+  date: Summer 2018
+
