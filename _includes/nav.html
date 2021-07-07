@@ -2,21 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed;width: 100%;z-index: 3;" id="nav">
 
     <a class="navbar-brand" href="{{site.url}}">{{ site.name }}</a>
-    <div class="ml-auto mr-3">
-        <span class="">
-            <a class="btn btn-social-icon btn-github m-auto" href="https://github.com/trigaten"><i
-                    class="fa fa-github fa-lg"></i></a>
-        </span>
-        <span class="ml-lg-1">
-            <a class="btn btn-social-icon btn-linkedin m-auto" href="https://www.linkedin.com/in/sander-schulhoff"><i
-                    class="fa fa-linkedin fa-lg"></i></a>
-        </span>
     
-        <span class="ml-lg-1">
-            <button onclick="showEmails()" id="email-toggler" class="btn btn-social-icon btn-github m-auto" href="#"><i
-                    class="fa fa-envelope fa-lg"></i></button>
-        </span>
-    </div>
     
     <style>
         .purple-bg {
@@ -47,6 +33,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav ml-auto">
+            <div class="nav-item mr-2 my-auto order-last order-lg-first">
+                <span class="">
+                    <a class="btn btn-social-icon btn-github m-auto" href="https://github.com/trigaten"><i
+                            class="fa fa-github fa-lg"></i></a>
+                </span>
+                <span class="ml-lg-1">
+                    <a class="btn btn-social-icon btn-linkedin m-auto" href="https://www.linkedin.com/in/sander-schulhoff"><i
+                            class="fa fa-linkedin fa-lg"></i></a>
+                </span>
+            
+                <span class="ml-lg-1">
+                    <button onclick="showEmails()" id="email-toggler" class="btn btn-social-icon btn-github m-auto" href="#"><i
+                            class="fa fa-envelope fa-lg"></i></button>
+                </span>
+            </div>
             {% for item in site.data.nav %}
                 <li class="nav-item">
                     <a class="nav-link {% if page.url == item.link %} active{% endif %}" href="{{ item.link }}" target="{{item.target}}">{{ item.name }}</a>
