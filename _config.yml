@@ -21,17 +21,19 @@
 title: Sander Schulhoff's Personal Website
 email: sanderschulhoff@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sander Schulhoff's Personal Website
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://trigaten.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  trigaten
 name: Sander Schulhoff
+author: Sander Schulhoff
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 defaults:
   - scope:
@@ -42,4 +44,5 @@ defaults:
   - scope:
       path: ""
     values:
+      image: "assets/media/dp_headshot.jpg"
       layout: "default"
