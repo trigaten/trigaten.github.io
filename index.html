@@ -2,14 +2,11 @@
 title: Sander Schulhoff
 ---
 <script type="text/javascript" src="assets/scripts.js"></script>
-<style>
+<!-- <style>
     * {
-        /* border: 1px solid */
+        border: 1px solid black
     }
-</style>
-
-<!-- <img src="media/smile.png" style="height 50px; position: -50px;position: relative;"> -->
-
+</style> -->
 
 <!-- name/card -->
 
@@ -50,31 +47,37 @@ title: Sander Schulhoff
             <div class="col-md-12 col-lg-6 text-right">
                 <h3 class="text-center">Recent Work</h3>
 
-                <div id="carousel" class="carousel slide m-0 p-0 w-100 h-100" data-ride="carousel">
-                    <ol class="carousel-indicators" style="z-index: 1;">
+                <div id="carousel" class="carousel slide m-0 p-0" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators" style="z-index: 1;">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <!-- <li data-target="#carousel" data-slide-to="2"></li> -->
-                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-                    </ol>
+                        <li data-target="#carousel" data-slide-to="1"></li> -->
+                    <!-- <li data-target="#carousel" data-slide-to="2"></li> -->
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                    <!-- </ol> -->
                     <style>
-                        .carousel-caption{
-                            margin-bottom: 0px;
-                            padding-bottom:0px
+                        .carousel-caption {
+                            background-color:rgba(121, 118, 120, 0.5);
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                            z-index: 1;
                         }
                     </style>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="">
-                                <a href="https://teacherrecsystem.tech"><img class="img-fluid" src="assets/media/TRS-GS.png" alt=""></a>
-                                <div class="carousel-caption d-md-block">
-                                    <h5 style="display:inline;background-color: rgba(0, 3, 3, 0.9);">Teacher Recommender System</h5>
+                                <a href="https://teacherrecsystem.tech"><img class="img-fluid"
+                                        src="assets/media/TRS-GS.png" alt=""></a>
+                                <div class="carousel-caption">
+                                    <h5 style="display:inline;">Teacher Recommender
+                                        System</h5>
                                     <br>
-                                    <p style="display:inline;background-color: rgba(0, 3, 3, 0.9);">Data collection and processing via Google Workspace APIs</p>
+                                    <p style="display:inline;">Data collection and
+                                        processing via Google Workspace APIs</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- <div class="carousel-item">
                             <img class="img-fluid" src="assets/media/DRLMC.png" alt="">
                             <div class="carousel-caption d-none d-md-block">
@@ -83,11 +86,13 @@ title: Sander Schulhoff
                             </div>
                         </div> -->
                         <div class="carousel-item">
-                           <a href="#projects"><img class="img-fluid" src="assets/media/Diplomacy.png" alt=""></a>
-                            <div class="carousel-caption d-md-block" >
-                                <h5 style="display:inline;background-color: rgba(0, 3, 3, 0.3);">Diplomacy Discord Bot</h5>
+                            <a href="#projects"><img class="img-fluid" src="assets/media/Diplomacy.png" alt=""></a>
+                            <div class="carousel-caption d-md-block">
+                                <h5 style="display:inline;">Diplomacy Discord Bot
+                                </h5>
                                 <br>
-                                <p style="display:inline;background-color: rgba(0, 3, 3, 0.3);">Data collection and machine learning with Discord.js and Python</p>
+                                <p style="display:inline;">Data collection and
+                                    machine learning with Discord.js and Python</p>
                             </div>
                         </div>
                     </div>
@@ -198,7 +203,7 @@ title: Sander Schulhoff
             </ul>
         </div>
     </div>
-    
+
 
 </div>
 
@@ -221,11 +226,11 @@ title: Sander Schulhoff
             <div class="mt-auto align-middle mb-2">
                 <h5>{{project.note}}</h5>
                 {% for tag in project.tags %}
-                    {% if tag == "1000+ lines of code" %}
-                        <span class="float-right mt-2">1000+ lines of code</span>
-                    {% else %}
-                        <img src="assets/media/logos/{{tag}}.png" class="" alt="" style="height: 40px;">
-                    {% endif %}
+                {% if tag == "1000+ lines of code" %}
+                <span class="float-right mt-2">1000+ lines of code</span>
+                {% else %}
+                <img src="assets/media/logos/{{tag}}.png" class="" alt="" style="height: 40px;">
+                {% endif %}
                 {% endfor %}
             </div>
             <div class="container my-1 pt-1 mt-auto" style="bottom: 0;left:0; position:absolute;">
@@ -237,11 +242,6 @@ title: Sander Schulhoff
         {% endfor %}
     </div>
 </div>
-<style>
-    /* *{
-        border: 1px solid black
-    } */
-</style>
 <!-- projects end -->
 </div>
 
@@ -265,7 +265,6 @@ title: Sander Schulhoff
                 $("#more-about-arrow").removeClass("fa-angle-down")
             }
             moreAboutOpen = !moreAboutOpen;
-
         });
 
 
