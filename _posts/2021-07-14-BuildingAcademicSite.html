@@ -1,0 +1,105 @@
+---
+title: Building an Academic Website
+description: How to build a responsive modular academic website with Bootstrap and Jekyll
+image: assets/media/DenisNewSite.png
+---
+<style>
+    *{
+        /* border: 1px solid black */
+    }
+</style>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 d-flex flex-column">
+                <h2>{{page.title}}</h2>
+                <h5 class="text-muted">{{page.description}}</h5>
+                <h5 class="mt-auto">
+                    <ol>
+                        <!-- <li>Intro</li> -->
+                        <li>Why Bootstrap and Jekyll?</li>
+                        <li>Icons</li>
+                        <li>Jekyll Data</li>
+                        <li>Blogging</li>
+                    </ol>
+                </h5>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <a href="https://denis.ai"><img src="{{page.baseurl}}/{{page.image}}" class="img-fluid mx-auto" alt="Responsive image"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mx-5 px-5">
+    <h2>Why Bootstrap and Jekyll?</h2>
+    <hr>
+    <p>
+        For the purpose of a simple academic website, Bootstrap provides a simple way to responsively structure content with containers, rows, and columns.
+        With only a few divs, you can create appealing layouts for different screen sizes. 
+        
+        It provides classes for:
+        <ul>
+            <li>
+                Quickly adjusting margins/padding (e.g. "mt-2" = margin-left: 0.50rem, "py-4" = top and bottom padding: 1.5rem).
+            </li>
+            <li>
+                Making a number of display changes depending on screen size (e.g. "d-md-none" = display:none on medium screen sizes and larger)
+            </li>
+            <li>
+                Responsive navbars and images
+            </li>
+        </ul>
+        These features make development and site upkeep very quick.
+        <br>
+        Jekyll lets you to use HTML more efficiently. Among other things it allows you to:
+        <ul>
+            <li>
+                Include HTML files into other HTML files via its <a href="https://jekyllrb.com/docs/includes/"><code>include</code></a> tag.
+            </li>
+            <li>
+                Create reuseable templates.
+            </li>
+            <li>
+                Easily work with multiple static blog pages
+            </li>
+        </ul>
+    </p>
+    <p>
+        Jekyll has a very quick tutorial <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">here</a>.
+        <br>
+        Bootstrap has a more complicated tutorial. I recommend you get to the 
+        <a href="https://getbootstrap.com/docs/4.1/layout/overview/">layout overview</a>
+        as soon as possible after browsing the 
+        <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">Introduction</a> and getting the 
+        <a href="https://getbootstrap.com/docs/4.1/getting-started/download/#bootstrapcdn">Bootstrap CDN</a> setup.
+    </p>
+    <h2>Icons</h2>
+    <hr>
+    <p>
+        Using icons for your github, linkedin, twitter, etc. links is generally a better look than 
+        putting raw text links on your site. <a href="https://fontawesome.com">Font Awesome</a> and 
+        <a href="https://mdbootstrap.com/docs/standard/extended/social-media/">Bootstrap Social</a>
+        icons are good for this. These sites contain many free social media (and other) icons which 
+        look good and are easily useable in your site via their CDNs.
+    </p>
+    <h2>Jekyll Data</h2>
+    <hr>
+    <p>
+        Another particularly useful feature of Jekyll is how you can easily store and
+        load data from .yaml files. For example, in the image, the content under the 
+        Education, Industry Experience, and Languages is all stored in .yaml files and 
+        loaded into the webpage with a Jekyll for each loop. The links in the navbar are 
+        also all stored in a .yaml file which is loaded similarly.
+    </p>
+    <h2>Blogging</h2>
+    <hr>
+    <p>
+        Jekyll provides useful features for managing blog pages. You can write 
+        content with HTML or Markdown and use Jekyll to load them onto your site. 
+        You can make a "posts" page which lists your posts, provides
+        a description, and an image very easily. The site in the image has 
+        title+description, but take a look BLOGPAGE for an example with all three
+        content pieces. You can also generate blog pages from .yaml files.
+    </p>
+    
+</div>
