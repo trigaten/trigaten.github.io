@@ -11,8 +11,8 @@
     - research
     - machine-learning
   tags: 
-    - Python
-    - Javascript
+    - python
+    - javascript
   note: Advised by Denis Peskov, Jordan Boyd-Graber
   date: Spring 2021
 
@@ -30,8 +30,8 @@
     - research
     - machine-learning
   tags: 
-    - Python
-    - Javascript
+    - python
+    - javascript
   note: Advised by Denis Peskov, Jordan Boyd-Graber
   date: (Fall 2020)
 
@@ -47,10 +47,10 @@
     - research
     - web
   tags: 
-    - PHP
-    - Javascript
-    - HTML
-    - CSS
+    - php
+    - javascript
+    - html
+    - css
   note: Built for Denis Peskov
   date: Fall 2020
 
@@ -62,7 +62,7 @@
   categories: 
     - miscl
   tags: 
-    - Python
+    - python
   date: Fall 2020
 
 #TRS Website
@@ -73,10 +73,10 @@
     - professional
     - web
   tags: 
-    - HTML
-    - CSS
-    - MaterializeCSS
-    - Javascript
+    - html
+    - css
+    - materializecss
+    - javascript
   date: Fall 2020
 
 #My Website
@@ -89,11 +89,11 @@
     - professional
     - web
   tags: 
-    - HTML
-    - CSS
-    - Bootstrap
-    - Javascript
-    - Jekyll
+    - html
+    - css
+    - bootstrap
+    - javascript
+    - jekyll
   date: Fall 2020
 
 #Simple continuous neural cross entropy
@@ -109,7 +109,7 @@
     - machine-learning
     - miscl
   tags: 
-    - Python
+    - python
   date: Summer 2020
 
 #TRS SYSTEM
@@ -124,11 +124,11 @@
     - professional
     - web
   tags: 
-    - HTML
-    - CSS
-    - MaterializeCSS
-    - Javascript
-    - Google Apps Script
+    - html
+    - css
+    - materializecss
+    - javascript
+    - google apps script
     - 1000+ lines of code
   date: Spring 2019-Present
 
@@ -147,10 +147,10 @@
     - professional
     - web
   tags: 
-    - HTML
-    - CSS
-    - Javascript
-    - PHP
+    - html
+    - css
+    - javascript
+    - php
     - 1000+ lines of code
   date: Spring 2019
 
@@ -165,9 +165,9 @@
   categories: 
     - miscl
   tags: 
-    - Swift
-    - Obj-C
-    - Java
+    - swift
+    - obj-C
+    - java
     - 1000+ lines of code
   date: Summer 2018
 
