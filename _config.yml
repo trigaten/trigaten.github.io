@@ -44,5 +44,5 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "assets/media/dp_headshot.jpg"
+      image: "assets/media/myHead.png"
       layout: "default"
