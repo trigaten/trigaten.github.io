@@ -51,7 +51,7 @@ title: Sander Schulhoff
                     <!-- </ol> -->
                     <style>
                         .carousel-caption {
-                            background-color:rgba(121, 118, 120, 0.5);
+                            background-color: rgba(121, 118, 120, 0.5);
                             position: relative;
                             left: 0;
                             top: 0;
@@ -145,18 +145,21 @@ title: Sander Schulhoff
 </div>
 </div>
 
+
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6">
             <h2 id="projects">Work</h2>
             <h6>Currently working on:</h6>
             <ul>
-                <li><a href="https://smc-datachallenge.ornl.gov"><del>SMC Data Challenge</del></a> Recently submitted paper on semantic segmentation <a href="https://github.com/trigaten/smc-data-challenge">(Codebase)</a></li>
-                <li>Version 2.0 of <a
-                        href="https://workspace.google.com/marketplace/app/teacher_recommender_system/410900919077">TRS</a> (refactoring with Vue.js)
+                <li><a href="https://smc-datachallenge.ornl.gov"><del>SMC Data Challenge</del></a> Paper on semantic segmentation accepted into Smoky Mountain Data Challenge</li>
+                <li><a href="https://github.com/trigaten/AI-Judge">AI Judge</a>: Building deep learning models to generate classifications and textual explanations for Reddit AITA posts.
                 </li>
-                <li>Diplomacy bot for next iteration of <a href="https://www.aclweb.org/anthology/2020.acl-main.353/">
-                        It Takes Two to Lie </a>paper
+                <li>Project GLADIATOR: Training a superhuman sword fighting agent in Minecraft with Reinforcement Learning (PPO)
+                </li>
+                <li>Phoneme to Grapheme Seq2Seq model for CMSC320
+                </li>
+                <li>Working on political campaign for Augustin Saah
                 </li>
             </ul>
         </div>
@@ -202,7 +205,7 @@ title: Sander Schulhoff
 </div>
 
 <!-- projects -->
-<div class="container-fluid px-5">
+<div class="container-fluid px-5" >
     <hr>
     <br>
     <div class="row">
@@ -216,6 +219,7 @@ title: Sander Schulhoff
             <h2 class="text-center">{{project.title}}</h2>
             <h5 class="text-center">Built {{project.date}}</h5>
             <div style="border-radius: 20px;">{{project.image}}</div>
+            
             <p class="mt-2 mx-2">{{project.description}}</p>
             <div class="mt-auto align-middle mb-2">
                 <h5>{{project.note}}</h5>
@@ -223,7 +227,7 @@ title: Sander Schulhoff
                 {% if tag == "1000+ lines of code" %}
                 <span class="float-right mt-2">1000+ lines of code</span>
                 {% else %}
-                <img src="assets/media/logos/{{tag}}.png" class="" alt="" style="height: 40px;">
+                <img src="assets/media/logos/{{tag}}.png" class="" alt="" style="height: 30px;">
                 {% endif %}
                 {% endfor %}
             </div>

@@ -1,3 +1,19 @@
+# SMC Data Challenge
+- title: SMC Data Challenge
+  description:
+    I worked with a team of undergrads to develop a semantic segmentation model for 
+    the "<a href="https://smc-datachallenge.ornl.gov/2021-challenge-3/">Synthetic-to-Real Domain Adaptation for Autonomous Driving<a>" challenge. This was a good DL
+    learning experience and our paper was accepted into the SMC Data Challenge 2021, but our results 
+    were realisitically poor.
+    (<a href="https://github.com/trigaten/smc-data-challenge">Codebase<a>) (<a href="assets/media/smc_report.pdf" target="_blank">Paper<a>)
+  image:  <img src="assets/media/seg.png" class="img-fluid">
+  categories: 
+    - professional
+    - research
+    - machine-learning
+  tags: 
+    - python
+  date: Summer 2021
 
 #DIPLOMACY BOT V2
 - title: Diplomacy Bot Changes V2
@@ -33,10 +49,26 @@
     - python
     - javascript
   note: Advised by Denis Peskov, Jordan Boyd-Graber
-  date: (Fall 2020)
+  date: Fall 2020
+
+#Scully's thing
+- title: Semi-Automated Writing System
+  description: 
+    I was hired to write software to automate the process of writing certain content on cards with an <a href="https://shop.evilmadscientist.com/productsmenu/846">Axidraw<a>. 
+    I created a UI from scratch with Bootstrap, used Electron to make it into an 'app', wrote a backend with
+    Python+pyaxidraw, and compiled the app with Pyinstaller.  
+  image:  <img src="assets/media/auto-writer.png" class="img-fluid">
+  categories: 
+    - professional
+  tags: 
+    - python
+    - html
+    - javascript
+    - bootstrap
+  date: Fall 2020
 
 #Modulation data collection site
-- title: Modulation data collection site
+- title: Modulation Data Collection Site
   description: 
     A <a href="https://github.com/trigaten/Autocomplete_Site_Form">website</a> built for a NLP project 
     to collect data from users answering analogy questions while being provided with Wikipedia autocomplete
@@ -98,11 +130,11 @@
 
 #Simple continuous neural cross entropy
 - title: <a href='https://www.youtube.com/embed/DVIzi8_DMWQ'>Simple Continuous Neural Cross-Entropy in Project Malmo</a>
-  description: A draft of a video describing the training process of a simple (Pytorch) deep learning agent in Project Malmo I created for some advisors (<a href="https://chronic-coder.com/">Christopher Kok</a>, 
-    <a href="https://lugus-intelligence.com/">Ignacio Raposo</a>) from <a href="https://chronic-coder.com/">Chronic Coder Academy</a> over the summer after highschool.
+  description: A draft of a video describing the training process of a simple (Pytorch) deep learning agent in Microsoft's Project Malmo I created for some advisors (<a href="https://chronic-coder.com/">Christopher Kok</a>, 
+    <a href="https://lugus-intelligence.com/">Ignacio Raposo</a>) from <a href="https://chronic-coder.com/">Chronic Coder Academy</a> over the summer after highschool
     After reading <a href="http://incompleteideas.net/book/the-book.html">Intro to RL by Sutton and Barto</a> and some of <a href="https://www.packtpub.com/product/deep-reinforcement-learning-hands-on/9781788834247">Deep RL Hands On</a>
     I wanted to apply RL to a simple situation in project Malmo. I used this videomaking process to learn Blender and <a href="https://github.com/3b1b/manim">Manim</a> 
-    (<a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3b1b's animation library</a>). 
+    (<a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3b1b's animation library</a>). <strong>Project Malmo tweeted it <a href="https://twitter.com/Project_Malmo/status/1379234686807990276?s=20">here<a></strong>. 
 
   image: <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="100" height="100" src="https://www.youtube.com/embed/DVIzi8_DMWQ" allowfullscreen></iframe></div>
   categories: 
