@@ -4,7 +4,7 @@
     I worked with a team of undergrads to develop a semantic segmentation model for 
     the "<a href="https://smc-datachallenge.ornl.gov/2021-challenge-3/">Synthetic-to-Real Domain Adaptation for Autonomous Driving<a>" challenge. This was a good DL
     learning experience and our paper was accepted into the SMC Data Challenge 2021, but our results 
-    were realisitically below industry standard.
+    were realistically below industry standard.
     (<a href="https://github.com/trigaten/smc-data-challenge">Codebase<a>) (<a href="assets/media/smc_report.pdf" target="_blank">Paper<a>)
   image:  <img src="assets/media/seg.png" class="img-fluid">
   categories: 
