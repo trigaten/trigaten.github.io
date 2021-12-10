@@ -3,7 +3,7 @@
   description:
     I worked at Johns Hopkins using Microsoft \Psi and building a deep learning model
     for event data classification.
-    (<a href="https://github.com/trigaten/Event_Video_Classification">Codebase<a>) (<a href="assets/media/Hopkins_PSI_DL.pdf" target="_blank">Report<a>)
+    (<a href="https://github.com/trigaten/Event_Video_Classification">Codebase</a>) (<a href="assets/media/Hopkins_PSI_DL.pdf" target="_blank">Report</a>)
   image:  <img src="assets/media/event.png" class="img-fluid">
   categories: 
     - professional
@@ -13,6 +13,20 @@
     - python
     - c-sharp
     - c
+  date: Summer 2021
+
+# Denis's website
+- title: Denis Peskov's Website
+  description:
+    I used Bootstrap and Jekyll to build this website from scratch.
+  image:  <a href="https://denis.ai"><img src="assets/media/DenisNewSite.png" class="img-fluid"></a>
+  categories: 
+    - professional
+    - web
+  tags: 
+    - html
+    - css
+    - bootstrap
   date: Summer 2021
 
 # SMC Data Challenge
