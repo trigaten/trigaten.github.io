@@ -1,8 +1,8 @@
 # EMNLP 2023
 - title: HackAPrompt
   description:
-  Organized the first global scale Prompt Hacking competition (<a href="assets/media/HackAPrompt.pdf" target="_blank">Paper<a>), collected 600K+ adversarial prompts and published the first ontology of Prompt Hacking.
-  Raised 40K in sponsorship from OpenAI, Preamble, Scale AI, Stability AI, HuggingFace, and 7 other companies. Accepted to EMNLP.
+    Organized the first global scale Prompt Hacking competition (<a href="assets/media/HackAPrompt.pdf" target="_blank">Paper<a>), collected 600K+ adversarial prompts and published the first ontology of Prompt Hacking.
+    Raised 40K in sponsorship from OpenAI, Preamble, Scale AI, Stability AI, HuggingFace, and 7 other companies. Accepted to EMNLP.
   image: <img src="assets/media/ontology.png" class="img-fluid">
   categories: 
     - professional
@@ -10,7 +10,7 @@
     - machine-learning
   tags: 
     - python
-  date:
+  date: Summer-Fall 2023
 
 
 # SMC Data Challenge
