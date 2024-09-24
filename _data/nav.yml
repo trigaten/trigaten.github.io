@@ -1,7 +1,0 @@
-- name: Resume
-  link: assets/media/Resume.pdf
-  target: _blank
-- name: Work
-  link: \#projects
-- name: Technical Blog (Beta)
-  link: /blog.html
