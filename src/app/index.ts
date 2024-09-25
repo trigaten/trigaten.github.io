@@ -187,7 +187,7 @@ const gardenImagesHome = [
     "Technically edible, but very salty",
   ],
   [image8, "False Shamrock", "Oxalis Triangularis", ""],
-  [image7, "Cactus", "", ""],
+  [image7, "Not a Cactus", "", ""],
   [image6, "Home-Grown Garlic", "Allium sativum", "You can buy it from the grocery store and just grow it!"],
   [image9, "Some of my favorite room plants :)", "", ""],
 ];
