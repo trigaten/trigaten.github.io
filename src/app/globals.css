@@ -30,3 +30,8 @@ body {
     text-wrap: balance;
   }
 }
+
+/* New rule for heavier bold text in project descriptions */
+.description-content b {
+  font-weight: 900; /* Extra bold */
+}

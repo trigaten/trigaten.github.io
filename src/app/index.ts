@@ -83,7 +83,7 @@ const projectsResearch = [
     date: "Fall 2024",
     link: "https://forageflora.com/",
     description:
-      "Developed a comprehensive map of hundreds of wild plants on the University of Maryland campus, engaging numerous campus stakeholders and securing a UMD sustainability grant. Additionally, constructed a biogas reactor using plastic components to further support campus sustainability efforts.",
+      "Developed a <b>comprehensive map</b> of hundreds of wild plants on the University of Maryland campus, engaging numerous campus stakeholders and securing a <b>UMD sustainability grant</b>. Additionally, constructed a <b>biogas reactor</b> using plastic components to further support campus sustainability efforts.",
     image: botanyResearch,
     research: false,
     year: 2024,
@@ -94,7 +94,7 @@ const projectsResearch = [
     date: "Spring 2023",
     link: "https://paper.hackaprompt.com/",
     description:
-      "Organized the first and largest competition on prompt injection. Secured $40K in sponsorship from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. The paper won Best Theme Paper at EMNLP2023.",
+      "Organized the <b>first and largest competition on prompt injection</b>. Secured <b>$40K in sponsorship</b> from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the <b>largest dataset of prompt injections</b> (600K+ adversarial prompts) and developed the <b>first taxonomical ontology of Prompt Hacking</b>. The paper won <b>Best Theme Paper at EMNLP2023</b>.",
     image: hackAPrompt,
     research: true,
     year: 2023,
@@ -105,7 +105,7 @@ const projectsResearch = [
     date: "Spring 2023",
     link: "https://trigaten.github.io/Prompt_Survey_Site/",
     description:
-      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comphrehensive taxonomies of 100s of techniques.",
+      "Ran the <b>largest study on prompting ever done</b>. I lead a team of <b>32 researchers</b> from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed <b>over 1500 papers</b> and created a <b>systematic literature review</b> with comprehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
     research: true,
     year: 2023,
@@ -116,7 +116,7 @@ const projectsResearch = [
     date: "Summer 2022 - Summer 2023",
     link: "https://neurips.cc/virtual/2023/poster/73655#:~:text=BEDD%20consists%20of%20a%20collection,of%20human%20and%20algorithmic%20agents",
     description:
-      "Helped organize the Minecraft Deep Reinforcement Learning comeptition. Also ported in various functionalities from Malmo and wrote 1000+ lines of code.",
+      "Helped organize the <b>Minecraft Deep Reinforcement Learning competition</b>. Also ported in various functionalities from Malmo and wrote <b>1000+ lines of code</b>.",
     image: mineRL,
     research: true,
     year: 2023,
@@ -128,46 +128,12 @@ const projectsResearch = [
     date: "Spring 2022 - Spring 2023",
     stack: ["CI Pipelines"],
     description:
-      "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
+      "I led a team of graduate and undergraduate students in a <b>DARPA-funded multi-university project</b> aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched <b>four unique bot designs</b>: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed <b>continuous integration pipelines</b> to streamline development, implementing <b>Dockerized testing</b> and integrating precommit checks. Additionally, I built <b>Vercel integration</b> for the project's documentation website. I also authored a <b>comprehensive report on DAIDE-English translation</b> and developed a <b>DAIDE syntax parser package</b> to support communication protocols between the bots and players.",
     image: shade,
     research: false,
     year: 2023,
   },
-  // {
-  //   title: "Andreou Lab Internship",
-  //   stack: ["Python", "PyTorch", "CNN", "GRU"],
-  //   date: "Summer 2021 - Fall 2021",
-  //   link: "https://andreoulab.net/",
-  //   image: andreou,
-  //   description:
-  //     "During my internship at the Andreou Lab at Johns Hopkins University under Professor Andreas G. Andreou, I developed data pipelines to capture and transmit data from Arduino chips and RealSense cameras to Microsoft's Psi framework. My role also involved implementing a Convolutional Neural Network (CNN) combined with a Gated Recurrent Unit (GRU) model from scratch using PyTorch for video classification tasks, specifically working with event camera data. This hands-on experience allowed me to contribute to cutting-edge research at the intersection of hardware integration and machine learning.",
-  //   research: true,
-  //   year: 2021,
-  // },
-  // {
-  //   title: "Semiotic labs Deep RL Work",
-  //   stack: ["Python", "Reinforcement Learning", "Julia"],
-  //   date: "Summer 2022",
-  //   research: false,
-  //   link: "https://www.semiotic.ai/",
-  //   year: 2022,
-  //   description:
-  //     "Developed Software for deep reinforcement learning, and implemented continuous policy gradient bandits.",
-  //   image: semiotic,
-  // },
-  // {
-  //   title: "Farama Foundation",
-  //   stack: ["Python", "Jekyll", "Liquid", "HTML", "CSS"],
-  //   date: "Spring 2022 - Summer 2022",
-  //   research: false,
-  //   link: "https://farama.org/",
-  //   image: farama,
-  //   year: 2022,
-  //   description:
-  //     "I led the development of the new Gymnasium website, managing PRs and writing scripts to generate pages, menus, and GIFs. I implemented numerous fixes to Gymnasium, and built and refactored the Fantasia Jekyll theme from the PettingZoo website. Additionally, I wrote and published the gym-notices PyPI package and assisted in the development of the PettingZoo website.",
-  // },
 ];
-
 export default projectsResearch;
 
 const gardenImagesHome = [
@@ -178,8 +144,18 @@ const gardenImagesHome = [
     "Vaccinium angustifolium",
     "My first wild blueberries, found in Maine",
   ],
-  [image3, "Plants grown in my room", "", "Lettuce, Trifolium Oxalis, Garlic, the works!"],
-  [image4, "Red Trillium", "Trillium erectum", "Only flowers for 2-3 weeks a year."],
+  [
+    image3,
+    "Plants grown in my room",
+    "",
+    "Lettuce, Trifolium Oxalis, Garlic, the works!",
+  ],
+  [
+    image4,
+    "Red Trillium",
+    "Trillium erectum",
+    "Only flowers for 2-3 weeks a year.",
+  ],
   [
     image5,
     "Ice Plant",
@@ -188,34 +164,79 @@ const gardenImagesHome = [
   ],
   [image8, "False Shamrock", "Oxalis Triangularis", ""],
   [image7, "Not a Cactus", "", ""],
-  [image6, "Home-Grown Garlic", "Allium sativum", "You can buy it from the grocery store and just grow it!"],
+  [
+    image6,
+    "Home-Grown Garlic",
+    "Allium sativum",
+    "You can buy it from the grocery store and just grow it!",
+  ],
   [image9, "Some of my favorite room plants :)", "", ""],
 ];
 export { gardenImagesHome };
 export { homePageProjects };
 
 const gardenImagesProjects = [
-  [creepingCucumber, "Creeping Cucumber", "Melothria pendula", "Edible mini cucumbers that grow wild! (eat when green)"],
-  [ghostPipe, "Ghost Pipe", "Monotropa uniflora L.", "This is a non-photosynthesizing plant"],
+  [
+    creepingCucumber,
+    "Creeping Cucumber",
+    "Melothria pendula",
+    "Edible mini cucumbers that grow wild! (eat when green)",
+  ],
+  [
+    ghostPipe,
+    "Ghost Pipe",
+    "Monotropa uniflora L.",
+    "This is a non-photosynthesizing plant",
+  ],
   [plant2, "Yucca", "Yucca sp.", "That flower stem does taste like asparagus"],
   [plant3, "Miscl. plants in a terrarium", "", ""],
   [plant4, "A stunning leaf layout", "", "Not sure what this plant is called"],
   [plant5, "Just Nature", "", ""],
-  [plant6, "Pretty Orchids", "Orchidaceae sp.", "The Singapore Botanical gardens are known for their orchids"],
+  [
+    plant6,
+    "Pretty Orchids",
+    "Orchidaceae sp.",
+    "The Singapore Botanical gardens are known for their orchids",
+  ],
   [plant7, "This could be 1 of ~750 plants in the genus", "Russula sp.", ""],
-  [plant8, "Common Red Stem-Fig", "Ficus Variegata", "Its fruit grows directly on its trunk!"],
+  [
+    plant8,
+    "Common Red Stem-Fig",
+    "Ficus Variegata",
+    "Its fruit grows directly on its trunk!",
+  ],
 ];
 
 const gardenImagesBlog = [
   [blog1Plant, "Bunchberry", "Cornus canadensis", "Found in Maine"],
   [blog2Plant, "Ringless Honey mushroom", "Armillaria tabescens", ""],
   [blog3Plant, "Fake mushrooms, creepier than usual", "", ""],
-  [blog4Plant, "Beauty Berries, Mint, Persimmons, and Peppers", "", "Foraged on UMD campus"],
-  [blog5Plant, "Wineberries", "Rubus phoenicolasius", "100s of thousands grow around UMD"],
-  [blog7Plant, "Crocus", "Crocus sp.", "Some of the first flowers that come out in spring"],
+  [
+    blog4Plant,
+    "Beauty Berries, Mint, Persimmons, and Peppers",
+    "",
+    "Foraged on UMD campus",
+  ],
+  [
+    blog5Plant,
+    "Wineberries",
+    "Rubus phoenicolasius",
+    "100s of thousands grow around UMD",
+  ],
+  [
+    blog7Plant,
+    "Crocus",
+    "Crocus sp.",
+    "Some of the first flowers that come out in spring",
+  ],
   [blog9Plant, "Singapore Botanical Gardens", "", ""],
   [blog8Plant, "Leatherleaf Mahonia", "Berberis bealei", "U Maryland"],
-  [blog6Plant, "Wild Roses", "Rosa Rugosa", "Picture are rose hips, the edible fruit of roses"],
+  [
+    blog6Plant,
+    "Wild Roses",
+    "Rosa Rugosa",
+    "Picture are rose hips, the edible fruit of roses",
+  ],
 ];
 
 export { gardenImagesBlog };

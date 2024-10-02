@@ -91,9 +91,11 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-        <p className="pt-2 font-skModernRegular text-black text-sm md:text-base">
-          {description}
-        </p>
+        <div
+          className="pt-2 font-skModernRegular text-black text-sm md:text-base description-content"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+
         <Link
           href={link}
           className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-base md:text-lg rounded font-skModernRegular"
