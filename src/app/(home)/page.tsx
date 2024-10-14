@@ -4,6 +4,7 @@ import Hero from "@/components/homepage/hero";
 import LearnPrompting from "@/components/homepage/lp";
 import Garden from "@/components/homepage/garden";
 import HomeProjects from "@/components/homepage/homeprojects";
+import Podcasts from "@/components/homepage/podcasts";
 import { gardenImagesHome } from "..";
 
 const Section = ({ children }: { children: any }) => (
@@ -18,9 +19,12 @@ export default function Home() {
       </Section>
       <section className="mt-16">
         <LearnPrompting />
-        </section>
+      </section>
       <Section>
         <HomeProjects />
+      </Section>
+      <Section>
+        <Podcasts />
       </Section>
       <Section>
         <Garden images={gardenImagesHome} />

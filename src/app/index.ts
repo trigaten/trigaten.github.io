@@ -39,6 +39,15 @@ import blog7Plant from "@/../public/gardenPhotos/blog/BlogPlant7.png";
 import blog8Plant from "@/../public/gardenPhotos/blog/BlogPlant8.png";
 import blog9Plant from "@/../public/gardenPhotos/blog/BlogPlant9.png";
 
+//Podcasts
+import pc1 from "@/../public/podcasts/latentSpace.jpg";
+import pc2 from "@/../public/podcasts/cognitiveResearch.webp";
+import pc3 from "@/../public/podcasts/ignorePrevious.jpg";
+import pc4 from "@/../public/podcasts/whatsAI.png";
+import pc5 from "@/../public/podcasts/SecurityTable.jpeg";
+import pc6 from "@/../public/podcasts/mlSecOps.png";
+import pc7 from "@/../public/podcasts/promptCast.webp";
+import { title } from "process";
 const homePageProjects = [
   {
     title: "HackAPrompt",
@@ -347,3 +356,58 @@ const blogPosts: BlogPostProps[] = [
 ];
 
 export { blogPosts };
+
+//Podcasts
+
+const podcasts = [
+  {
+    title: "The Ultimate Guide to Prompting",
+    description: "Latent Spaces",
+    Image: pc1,
+    AudioLink: "https://www.latent.space/p/learn-prompting",
+  },
+  {
+    title: "Cognitive Research",
+    description:
+      "Delving into The Prompt Report, with Sander Schulhoff of LearnPrompting.org on The Cognitive Revolution Podcast",
+    Image: pc2,
+    AudioLink:
+      "https://www.cognitiverevolution.ai/delving-into-the-prompt-report-with-sander-schulhoff-of-learnprompting-org/",
+  },
+  {
+    title: "The Cognitive Revolution",
+    description: "Ignore Previous Instructions & Listen to This Interview",
+    Image: pc3,
+    AudioLink:
+      "https://www.cognitiverevolution.ai/ignore-previous-instructions-listen-to-this-interview-sander-schulhoff-ceo-learnprompting-org/",
+  },
+  {
+    title: "What's AI EP. 7",
+    description:
+      "Become a Pro at Prompt Engineering: Exclusive Tips from LearnPrompting Creator",
+    Image: pc4,
+    AudioLink: "https://www.youtube.com/watch?v=BNrPs3ANz1E",
+  },
+  {
+    title: "The Security Table",
+    description:
+      "The Impact of Prompt Injection and HackAPrompt AI in the Age of Security",
+    Image: pc5,
+    AudioLink: "https://open.spotify.com/episode/4NZ2JFuVpUPxX2ZzN9lCoo",
+  },
+  {
+    title: "MLSecOps",
+    description:
+      "Generative AI Prompt Hacking and Its Impact on AI Security & Safety",
+    Image: pc6,
+    AudioLink: "https://www.youtube.com/watch?v=ANzimffJ_QI",
+  },
+  {
+    title: "PromptCast",
+    description:
+      "Sander Schulhoff’s Learn Prompting is teaching 3 million people how to use AI",
+    Image: pc7,
+    AudioLink: "https://open.spotify.com/episode/4NZ2JFuVpUPxX2ZzN9lCoo/",
+  },
+];
+export { podcasts };
