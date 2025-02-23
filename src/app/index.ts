@@ -66,7 +66,7 @@ const homePageProjects = [
     date: "Spring 2023",
     link: "https://arxiv.org/pdf/2311.16119",
     description:
-      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comphrehensive taxonomies of 100s of techniques.",
+      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comprehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
     research: true,
     year: 2023,
