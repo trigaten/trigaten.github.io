@@ -16,7 +16,7 @@ export default function Hero() {
             massive scale studies in the fields 
             of <a href="https://trigaten.github.io/Prompt_Survey_Site/">prompting</a> and <a href="https://paper.hackaprompt.com">prompt security</a>.
             I have worked variously on the boardgame Diplomacy, Deep RL in Minecraft, Event Camera Video Classification, 
-            Plant Identification, Wetland Mitigation Banking, and Prompt Engineering/Hacking.
+            Plant Identification, Wetland Mitigation Banking, and Prompt Engineering/Hacking. I also advise Inventory Quant.
           </p>
         </div>
         <div className="w-full md:w-1/2">
