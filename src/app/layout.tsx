@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import localFont from "next/font/local";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const skModernBold = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Bold.ttf",
+
+const skModernBold = Montserrat({
+  subsets: ["latin"],
+  weight: "700",
   variable: "--font-sk-modern-bold",
 });
 
-const skModernRegular = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Regular.ttf",
+const skModernRegular = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
   variable: "--font-sk-modern-regular",
 });
 
-const skModernLight = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Light.ttf",
+const skModernLight = Montserrat({
+  subsets: ["latin"],
+  weight: "300",
   variable: "--font-sk-modern-light",
 });
 
