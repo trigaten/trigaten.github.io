@@ -71,6 +71,7 @@ import pc4 from "@/../public/podcasts/whatsAI.png";
 import pc5 from "@/../public/podcasts/SecurityTable.jpeg";
 import pc6 from "@/../public/podcasts/mlSecOps.png";
 import pc7 from "@/../public/podcasts/promptCast.webp";
+import worldFair from "@/../public/podcasts/world-fair.jpg";
 import { title } from "process";
 
 const projectsResearch = [
@@ -116,7 +117,7 @@ const projectsResearch = [
     title: "The Prompt Report",
     stack: ["LLMs"],
     date: "Spring 2023",
-    link: "https://arxiv.org/abs/2407.17032",
+    link: "https://arxiv.org/abs/2406.06608",
     description:
       "Ran the <b>largest study on prompting ever done</b>. I lead a team of <b>32 researchers</b> and created a <b>systematic literature review</b> with comprehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
@@ -446,31 +447,17 @@ export { blogPosts };
 
 const podcasts = [
   {
-    title: "AI Prompt Engineering in 2025",
-    description: "Lenny's Podcast with Sander Schulhoff",
+    title: "Lenny's Podcast",
+    description: "AI Prompt Engineering in 2025",
     Image: lennyPodcast,
     AudioLink:
       "https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff",
   },
   {
-    title: "EMNLP 2023 Best Theme Paper Talk",
-    description: "EMNLP 2023 – HackAPrompt presentation",
+    title: "EMNLP 2023",
+    description: "Best Theme Paper Talk",
     Image: emnlpTalk,
     AudioLink: "https://www.youtube.com/watch?v=4qXFgROy_BI",
-  },
-  {
-    title: "The Ultimate Guide to Prompting",
-    description: "Latent Spaces",
-    Image: pc1,
-    AudioLink: "https://www.latent.space/p/learn-prompting",
-  },
-  {
-    title: "Cognitive Research",
-    description:
-      "Delving into The Prompt Report, with Sander Schulhoff of LearnPrompting.org on The Cognitive Revolution Podcast",
-    Image: pc2,
-    AudioLink:
-      "https://www.cognitiverevolution.ai/delving-into-the-prompt-report-with-sander-schulhoff-of-learnprompting-org/",
   },
   {
     title: "The Cognitive Revolution",
@@ -478,6 +465,19 @@ const podcasts = [
     Image: pc3,
     AudioLink:
       "https://www.cognitiverevolution.ai/ignore-previous-instructions-listen-to-this-interview-sander-schulhoff-ceo-learnprompting-org/",
+  },
+  {
+    title: "Latent Space",
+    description: "The Ultimate Guide to Prompting",
+    Image: pc1,
+    AudioLink: "https://www.latent.space/p/learn-prompting",
+  },
+  {
+    title: "The Cognitive Revolution",
+    description: "Delving into The Prompt Report",
+    Image: pc2,
+    AudioLink:
+      "https://www.cognitiverevolution.ai/delving-into-the-prompt-report-with-sander-schulhoff-of-learnprompting-org/",
   },
   {
     title: "What's AI EP. 7",
@@ -506,6 +506,12 @@ const podcasts = [
       "Sander Schulhoff’s Learn Prompting is teaching 3 million people how to use AI",
     Image: pc7,
     AudioLink: "https://open.spotify.com/episode/4NZ2JFuVpUPxX2ZzN9lCoo/",
+  },
+  {
+    title: "AI Engineer World's Fair",
+    description: "AI Red-Teaming & Prompt Engineering",
+    Image: worldFair,
+    AudioLink: "https://www.youtube.com/watch?v=_BRhRh7mOX0",
   },
 ];
 export { podcasts };

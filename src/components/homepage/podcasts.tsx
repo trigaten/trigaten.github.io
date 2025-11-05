@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { podcasts } from "@/app";
@@ -9,6 +9,45 @@ export default function Talks() {
   const visitPodcast = (link: string) => {
     window.open(link, "_blank");
   };
+
+  const TARGET_HEIGHT = 200;
+  const ROW_GAP = 32; // matches gap-8
+
+  const rows = useMemo(() => {
+    if (podcasts.length <= 2) {
+      return [podcasts];
+    }
+
+    const midpoint = Math.ceil(podcasts.length / 2);
+    return [podcasts.slice(0, midpoint), podcasts.slice(midpoint)];
+  }, []);
+
+  const processedRows = useMemo(() => {
+    return rows.map((row) => {
+      const items = row.map((podcast) => {
+        const originalHeight = (podcast.Image as any)?.height ?? TARGET_HEIGHT;
+        const originalWidth = (podcast.Image as any)?.width ?? TARGET_HEIGHT;
+        const width = Math.round((originalWidth / originalHeight) * TARGET_HEIGHT);
+        return { podcast, width };
+      });
+      const totalWidth =
+        items.reduce((sum, item) => sum + item.width, 0) + Math.max(items.length - 1, 0) * ROW_GAP;
+      const maxRowWidth = 1100; // fallback for large screens
+      const scaleFactor = totalWidth > maxRowWidth ? maxRowWidth / totalWidth : 1;
+      const rowHeight = Math.round(TARGET_HEIGHT * scaleFactor);
+
+      const scaledItems = items.map((item) => ({
+        podcast: item.podcast,
+        width: Math.round(item.width * scaleFactor),
+      }));
+
+      const scaledTotalWidth =
+        scaledItems.reduce((sum, item) => sum + item.width, 0) +
+        Math.max(scaledItems.length - 1, 0) * ROW_GAP;
+
+      return { items: scaledItems, height: rowHeight, totalWidth: scaledTotalWidth };
+    });
+  }, [rows]);
 
   return (
     <div className="container mx-auto px-4 py-2">
@@ -43,35 +82,43 @@ export default function Talks() {
       </div> */}
 
       {/* Podcast List */}
-      <div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {podcasts.map((podcast, index) => (
-            <div
-              key={index}
-              className="cursor-pointer transform transition-transform hover:scale-105"
-              onClick={() => {
-                setSelectedPodcast(podcast);
-                visitPodcast(podcast.AudioLink);
-              }}
-            >
-              <div className="relative w-full aspect-square sm:w-32 sm:h-32 mx-auto overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="flex flex-col gap-12">
+        {processedRows.map(({ items, height, totalWidth }, rowIndex) => (
+          <div
+            key={`podcast-row-${rowIndex}`}
+            className="flex flex-nowrap gap-8 justify-center"
+            style={{ width: totalWidth, maxWidth: "100%", margin: "0 auto" }}
+          >
+            {items.map(({ podcast, width }, index) => (
+              <div
+                key={`${podcast.title}-${index}`}
+                className="cursor-pointer transform transition-transform hover:scale-105"
+                style={{ width }}
+                onClick={() => {
+                  setSelectedPodcast(podcast);
+                  visitPodcast(podcast.AudioLink);
+                }}
+              >
                 <Image
                   src={podcast.Image}
                   alt={podcast.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, 128px"
-                  style={{ objectFit: "contain" }}
+                  height={height}
+                  width={width}
+                  className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 object-contain"
+                  placeholder="blur"
                 />
+                <div className="mt-3" style={{ width }}>
+                  <h4 className="text-sm font-semibold font-skModernBold text-center text-black">
+                    {podcast.title}
+                  </h4>
+                  <p className="mt-1 text-xs text-gray-600 text-center">
+                    {podcast.description}
+                  </p>
+                </div>
               </div>
-              <h4 className="mt-3 text-sm font-semibold font-skModernBold text-center text-black">
-                {podcast.title}
-              </h4>
-              <p className="mt-1 text-xs text-gray-600 text-center px-2">
-                {podcast.description}
-              </p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

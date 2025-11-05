@@ -10,16 +10,12 @@ export default function HackAPrompt() {
           <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
             HackAPrompt
           </h1>
-          <div className="flex items-center mb-4">
-            <h2 className="text-md text-gray-500 font-skModernRegular">
-              Spring 2023
-            </h2>
-          </div>
+          <div className="mb-4" />
           <h3 className="text-md font-skModernRegular text-black mb-4">
-            Founder and Lead Organizer
+            Co-Founder and CEO
           </h3>
           <Link
-            href="https://paper.hackaprompt.com/"
+            href="https://hackaprompt.com/"
             className="inline-block pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-skModernRegular"
             target="_blank"
           >

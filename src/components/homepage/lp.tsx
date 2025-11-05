@@ -13,17 +13,7 @@ export default function LearnPrompting() {
           <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
             Learn Prompting
           </h1>
-          <div className="flex items-center mb-4">
-            <h2 className="text-md text-gray-500 font-skModernRegular mr-1">
-              December 2022 -
-            </h2>
-            <div className="flex items-center">
-              <div className="w-2 h-2 bg-green-600 rounded-full mr-[0.4rem] mt-1"></div>
-              <span className="text-lg font-skModernRegular text-green-600">
-                Present
-              </span>
-            </div>
-          </div>
+          <div className="mb-4" />
           <h3 className="text-md font-skModernRegular text-black mb-4">
             Co-Founder and CEO
           </h3>
