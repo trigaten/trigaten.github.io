@@ -10,11 +10,15 @@ import image6 from "@/../public/gardenPhotos/home/image6.png";
 import image7 from "@/../public/gardenPhotos/home/image7.png";
 import image9 from "@/../public/gardenPhotos/home/image9.png";
 import thePromptReport from "@/../public/projects/2023/thePromptReport.png";
-import mineRL from "@/../public/projects/2023/mineRL.png";
 import shade from "@/../public/projects/2023/Shade.png";
 import andreou from "@/../public/projects/2023/andreou.png";
 import farama from "@/../public/projects/2023/farama.png";
 import semiotic from "@/../public/projects/2023/semiotic.png";
+import lunarLanderGif from "@/../public/projects/2024/lunar_lander.gif";
+import minerlImage from "@/../public/projects/2024/minerl.jpg";
+import attackerMovesSecondImage from "@/../public/projects/2024/attacker_moves_second.png";
+import faramaLogo from "@/../public/logos/farama.jpeg";
+import metaLogo from "@/../public/logos/meta.jpg";
 //Plant imports for projects
 import creepingCucumber from "@/../public/gardenPhotos/projects/creepingCucumber.png";
 import ghostPipe from "@/../public/gardenPhotos/projects/ghostPipe.png";
@@ -38,8 +42,28 @@ import blog6Plant from "@/../public/gardenPhotos/blog/BlogPlant6.png";
 import blog7Plant from "@/../public/gardenPhotos/blog/BlogPlant7.png";
 import blog8Plant from "@/../public/gardenPhotos/blog/BlogPlant8.png";
 import blog9Plant from "@/../public/gardenPhotos/blog/BlogPlant9.png";
-
+import placeholderImage from "@/../public/projectBg.png";
 //Podcasts
+import lennyPodcast from "@/../public/talks/lennys-podcast.webp";
+import emnlpTalk from "@/../public/talks/emnlp-2023-best-theme.webp";
+import openaiLogo from "@/../public/logos/openai.png";
+import huggingFaceLogo from "@/../public/logos/huggingface.png";
+import scaleAILogo from "@/../public/logos/scale-ai.webp";
+import umdLogo from "@/../public/logos/umd.png";
+import milaLogo from "@/../public/logos/mila.png";
+import learnPromptingLogo from "@/../public/logos/learnprompting.png";
+import aicrowdLogo from "@/../public/logos/aicrowd.png";
+import bathLogo from "@/../public/logos/bath.jpeg";
+import carnegieLogo from "@/../public/logos/carnegie.jpeg";
+import microsoftLogo from "@/../public/logos/microsoft.png";
+import princetonLogo from "@/../public/logos/princeton.png";
+import stanfordLogo from "@/../public/logos/stanford.png";
+import matsLogo from "@/../public/logos/mats.png";
+import ethLogo from "@/../public/logos/eth.png";
+import deepmindLogo from "@/../public/logos/deepmind.png";
+import anthropicLogo from "@/../public/logos/anthropic.jpg";
+import hackapromptLogo from "@/../public/logos/hackaprompt.png";
+import towardsAILogo from "@/../public/logos/towards-ai.png";
 import pc1 from "@/../public/podcasts/latentSpace.jpg";
 import pc2 from "@/../public/podcasts/cognitiveResearch.webp";
 import pc3 from "@/../public/podcasts/ignorePrevious.jpg";
@@ -48,42 +72,6 @@ import pc5 from "@/../public/podcasts/SecurityTable.jpeg";
 import pc6 from "@/../public/podcasts/mlSecOps.png";
 import pc7 from "@/../public/podcasts/promptCast.webp";
 import { title } from "process";
-const homePageProjects = [
-  {
-    title: "HackAPrompt",
-    stack: ["React", "Node"],
-    date: "Spring 2023",
-    link: "https://paper.hackaprompt.com/",
-    description:
-      "Organized the first and largest competition on prompt injection. Secured $40K in sponsorship from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. The paper won Best Theme Paper at EMNLP2023.",
-    image: hackAPrompt,
-    research: true,
-    year: 2023,
-  },
-  {
-    title: "The Prompt Report",
-    stack: ["LLMs"],
-    date: "Spring 2023",
-    link: "https://arxiv.org/pdf/2311.16119",
-    description:
-      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comprehensive taxonomies of 100s of techniques.",
-    image: thePromptReport,
-    research: true,
-    year: 2023,
-  },
-  // {
-  //   title:
-  //     "Stabilizing Hostilities through Arbitration and Diplomatic Engagement",
-  //   link: "https://www.shade-aie.org/",
-  //   date: "Spring 2022 - Spring 2023",
-  //   stack: ["CI Pipelines"],
-  //   description:
-  //     "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
-  //   image: shade,
-  //   research: true,
-  //   year: 2023,
-  // },
-];
 
 const projectsResearch = [
   {
@@ -103,31 +91,123 @@ const projectsResearch = [
     date: "Spring 2023",
     link: "https://paper.hackaprompt.com/",
     description:
-      "Organized the <b>first and largest competition on prompt injection</b>. Secured <b>$40K in sponsorship</b> from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the <b>largest dataset of prompt injections</b> (600K+ adversarial prompts) and developed the <b>first taxonomical ontology of Prompt Hacking</b>. The paper won <b>Best Theme Paper at EMNLP2023</b>.",
+      "Organized the <b>first and largest competition on prompt injection</b>. Secured <b>$40K in sponsorship</b> from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the <b>largest dataset of prompt injections</b> (600K+ adversarial prompts) and developed the <b>first taxonomical ontology of Prompt Hacking</b>.<br /><br />The paper and corresponding dataset are used by every frontier lab, AI security company, and most Fortune 500 companies to secure and benchmark their systems.",
     image: hackAPrompt,
     research: true,
+    anchor: "research-hackaprompt",
+    logos: [
+      { src: openaiLogo, alt: "OpenAI", href: "https://openai.com/" },
+      { src: huggingFaceLogo, alt: "Hugging Face", href: "https://huggingface.co/" },
+      { src: scaleAILogo, alt: "Scale AI", href: "https://scale.com/" },
+      { src: milaLogo, alt: "Mila", href: "https://mila.quebec/en/" },
+      { src: umdLogo, alt: "University of Maryland", href: "https://umd.edu/" },
+      { src: towardsAILogo, alt: "Towards AI", href: "https://towardsai.net/" },
+    ],
+    awards: [
+      {
+        label: "🏆 Best Theme Paper, EMNLP 2023",
+        tooltip:
+          "I was the youngest person and second ever undergrad to win this. ~20,000 papers were submitted that year.",
+      },
+    ],
     year: 2023,
   },
   {
     title: "The Prompt Report",
     stack: ["LLMs"],
     date: "Spring 2023",
-    link: "https://trigaten.github.io/Prompt_Survey_Site/",
+    link: "https://arxiv.org/abs/2407.17032",
     description:
-      "Ran the <b>largest study on prompting ever done</b>. I lead a team of <b>32 researchers</b> from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed <b>over 1500 papers</b> and created a <b>systematic literature review</b> with comprehensive taxonomies of 100s of techniques.",
+      "Ran the <b>largest study on prompting ever done</b>. I lead a team of <b>32 researchers</b> and created a <b>systematic literature review</b> with comprehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
     research: true,
+    logos: [
+      { src: openaiLogo, alt: "OpenAI", href: "https://openai.com/" },
+      { src: huggingFaceLogo, alt: "Hugging Face", href: "https://huggingface.co/" },
+      { src: scaleAILogo, alt: "Scale AI", href: "https://scale.com/" },
+      { src: milaLogo, alt: "Mila", href: "https://mila.quebec/en/" },
+      { src: umdLogo, alt: "University of Maryland", href: "https://umd.edu/" },
+      { src: towardsAILogo, alt: "Towards AI", href: "https://towardsai.net/" },
+    ],
+    awards: [
+      {
+        label: "🏆 #1 Paper of the Year (Latent Space)",
+        href: "https://www.latent.space/p/2025-papers",
+      },
+      {
+        label: "🏆 #1 Paper of the Day (Hugging Face)",
+        href: "https://huggingface.co/papers/2406.06608",
+      },
+    ],
     year: 2023,
   },
   {
-    title: "Mine RL",
+    title: "Gymnasium",
+    stack: ["Reinforcement Learning", "Python"],
+    date: "Spring 2024",
+    link: "https://arxiv.org/abs/2407.17032",
+    description:
+      "Introduces <b>Gymnasium</b>, a standardized API that streamlines the development, comparison, and benchmarking of reinforcement learning algorithms across diverse environments, greatly improving reproducibility within the RL community.<br /><br />Gymnasium is the maintained fork of the original OpenAI Gym project.",
+    image: lunarLanderGif,
+    research: true,
+    anchor: "research-gymnasium",
+    logos: [
+      { src: faramaLogo, alt: "Farama Foundation", href: "https://farama.org/" },
+      { src: metaLogo, alt: "Meta", href: "https://about.meta.com/" },
+      { src: umdLogo, alt: "University of Maryland", href: "https://umd.edu/" },
+      { src: milaLogo, alt: "Mila", href: "https://mila.quebec/en/" },
+    ],
+    awards: ["🏆 Spotlight Paper, NeurIPS 2025"],
+    year: 2024,
+  },
+  {
+    title: "The Attacker Moves Second",
+    stack: ["LLMs"],
+    date: "Fall 2023",
+    link: "https://arxiv.org/abs/2510.09023",
+    description:
+      "<b>Adaptive adversaries</b>, including adaptive automated attacks and human attackers, can successfully prompt injection/jailbreak <b>all state-of-the-art defenses and models</b>, including GPT-5.<br /><br /><b>TL;DR:</b> all models and defenses can be easily broken—<b>humans in particular can break everything</b>.",
+    image: attackerMovesSecondImage,
+    research: true,
+    logos: [
+      { src: deepmindLogo, alt: "Google DeepMind", href: "https://deepmind.google/" },
+      { src: anthropicLogo, alt: "Anthropic", href: "https://www.anthropic.com/" },
+      { src: openaiLogo, alt: "OpenAI", href: "https://openai.com/" },
+      { src: hackapromptLogo, alt: "HackAPrompt", href: "https://hackaprompt.com/" },
+      { src: matsLogo, alt: "MATS", href: "https://www.matsprogram.org/" },
+      { src: ethLogo, alt: "ETH Zurich", href: "https://ethz.ch/en.html" },
+    ],
+    awards: [
+      {
+        label: "👉 Submitted to ICLR 2026",
+      },
+    ],
+    year: 2023,
+  },
+  {
+    title: "MineRL BEDD/BASALT",
     stack: ["Reinforcement Learning", "Python"],
     date: "Summer 2022 - Summer 2023",
-    link: "https://neurips.cc/virtual/2023/poster/73655#:~:text=BEDD%20consists%20of%20a%20collection,of%20human%20and%20algorithmic%20agents",
+    link: "https://arxiv.org/abs/2312.02405",
     description:
-      "Helped organize the <b>Minecraft Deep Reinforcement Learning competition</b>. Also ported in various functionalities from Malmo and wrote <b>1000+ lines of code</b>.",
-    image: mineRL,
+      "We ran the <b>Minecraft Reinforcement Learning (MineRL) competition</b>, where competitors train agents to complete poorly specified tasks. We release a dataset of <b>26 million image-action pairs</b> from nearly <b>14,000 videos</b>, as well as <b>3,000 pairwise human evaluations</b> and a corresponding benchmark.",
+    image: minerlImage,
     research: true,
+    anchor: "research-minerl",
+    logos: [
+      { src: openaiLogo, alt: "OpenAI", href: "https://openai.com/" },
+      { src: umdLogo, alt: "University of Maryland", href: "https://umd.edu/" },
+      { src: aicrowdLogo, alt: "AIcrowd", href: "https://www.aicrowd.com/" },
+      { src: bathLogo, alt: "University of Bath", href: "https://www.bath.ac.uk/" },
+      { src: milaLogo, alt: "Mila", href: "https://mila.quebec/en/" },
+      { src: carnegieLogo, alt: "Carnegie Mellon University", href: "https://www.cmu.edu/" },
+      { src: microsoftLogo, alt: "Microsoft", href: "https://www.microsoft.com/" },
+    ],
+    awards: [
+      {
+        label: "🏆 Outstanding Paper, ICML 2024",
+      },
+    ],
     year: 2023,
   },
   {
@@ -144,6 +224,11 @@ const projectsResearch = [
   },
 ];
 export default projectsResearch;
+
+const homePageProjectTitles = ["HackAPrompt", "The Prompt Report"];
+const homePageProjects = homePageProjectTitles
+  .map((title) => projectsResearch.find((proj) => proj.title === title))
+  .filter((proj): proj is (typeof projectsResearch)[number] => Boolean(proj));
 
 const gardenImagesHome = [
   [image1, "Heliconia", "", "Somewhere in Singapore"],
@@ -360,6 +445,19 @@ export { blogPosts };
 //Podcasts
 
 const podcasts = [
+  {
+    title: "AI Prompt Engineering in 2025",
+    description: "Lenny's Podcast with Sander Schulhoff",
+    Image: lennyPodcast,
+    AudioLink:
+      "https://www.lennysnewsletter.com/p/ai-prompt-engineering-in-2025-sander-schulhoff",
+  },
+  {
+    title: "EMNLP 2023 Best Theme Paper Talk",
+    description: "EMNLP 2023 – HackAPrompt presentation",
+    Image: emnlpTalk,
+    AudioLink: "https://www.youtube.com/watch?v=4qXFgROy_BI",
+  },
   {
     title: "The Ultimate Guide to Prompting",
     description: "Latent Spaces",

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { podcasts } from "@/app";
 
-export default function Podcasts() {
+export default function Talks() {
   const [selectedPodcast, setSelectedPodcast] = useState(podcasts[0]);
   const visitPodcast = (link: string) => {
     window.open(link, "_blank");
@@ -12,9 +12,12 @@ export default function Podcasts() {
 
   return (
     <div className="container mx-auto px-4 py-2">
-      <h1 className="text-4xl font-bold mb-8 font-skModernBold text-black text-center">
-        Podcasts
+      <h1 className="text-4xl font-bold mb-4 font-skModernBold text-black text-center">
+        Talks & Podcasts
       </h1>
+      <p className="text-base md:text-lg text-gray-600 font-skModernRegular text-center mb-10">
+        I frequently speak at conferences and on popular tech podcasts about my research and work.
+      </p>
 
       {/* <div className="bg-gray-100 rounded-lg p-6 mb-8 shadow-lg text-center">
         <div className="relative mx-auto w-32 h-32 sm:w-48 sm:h-48 overflow-hidden rounded-lg shadow-md">

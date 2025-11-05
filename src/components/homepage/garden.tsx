@@ -56,7 +56,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
   );
 };
 
-export default function Garden({ images }: any) {
+export default function Garden({ images = gardenImagesHome }: { images?: any[] }) {
   return (
     <div className="flex items-center justify-center w-full md:p-4 py-4 px-8 ">
       <div className="flex flex-col w-full max-w-7xl">

@@ -6,33 +6,8 @@ import Link from "next/link";
 import image1 from "@/../public/LP/image1.png";
 
 export default function LearnPrompting() {
-  const images = [Image5, Image6, image1];
-
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {images.map((img, index) => (
-          <Link
-            href="https://learnprompting.org/"
-            target="_blank"
-            key={index}
-            className="block w-full"
-          >
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <Image
-                src={img}
-                alt={`Learn Prompting image ${index + 1}`}
-                className="transition-transform duration-300 hover:scale-105"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          </Link>
-        ))}
-      </div>
       <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
           <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
@@ -62,12 +37,15 @@ export default function LearnPrompting() {
         </div>
         <div className="w-full md:w-1/2">
           <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
-            Learn Prompting is a comprehensive guide to understanding and
-            mastering the art of prompt engineering. It covers various
-            techniques and strategies to effectively communicate with AI models,
-            helping you get the most out of AI-powered tools and applications.
-            Whether you're a beginner or an experienced user, this resource will
-            enhance your skills in crafting prompts for optimal results.
+            Learn Prompting is the first guide on prompt engineering on the
+            internet. Published as an open-source guide in December 2022, before
+            the release of ChatGPT, it has trained over 3 million people on how
+            to use Generative AIs like ChatGPT. Learn Prompting is used by most
+            Fortune 500 companies, is cited by Google, Wikipedia, and NIST, and
+            has conducted corporate trainings for companies including Microsoft,
+            Deloitte, Dropbox, and OpenAI. Learn Prompting runs a series of
+            popular synchronous and asynchronous courses on prompt engineering
+            and AI red-teaming.
           </p>
         </div>
       </div>
@@ -133,12 +111,10 @@ export default function LearnPrompting() {
 //         </div>
 //         <div className="w-full md:w-1/2">
 //           <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
-//             Learn Prompting is a comprehensive guide to understanding and
-//             mastering the art of prompt engineering. It covers various
-//             techniques and strategies to effectively communicate with AI models,
-//             helping you get the most out of AI-powered tools and applications.
-//             Whether you're a beginner or an experienced user, this resource will
-//             enhance your skills in crafting prompts for optimal results.
+//             Learn Prompting is the first guide on prompt engineering on the
+//             internet. Published as an open-source guide in December 2022,
+//             before the release of ChatGPT, it has trained over 3 million people
+//             on how to use Generative AIs like ChatGPT.
 //           </p>
 //         </div>
 //       </div>

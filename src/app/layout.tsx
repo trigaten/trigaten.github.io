@@ -31,9 +31,9 @@ const baseUrl =
 
 export const metadata: Metadata = {
   title:
-    "Sander Schulhoff | NLP Researcher, LearnPrompting.com Founder & CS Student at UMD",
+    "Sander Schulhoff | Award-Winning AI Researcher, Entrepreneur & Botanist",
   description:
-    "Sander Schulhoff is a Computer Science student at the University of Maryland, specializing in Natural Language Processing research at CLIP. He is also the founder of LearnPrompting.com. Explore his work in NLP, reinforcement learning, and UI creation.",
+    "Im an award-winning AI researcher, entrepreneur, and part-time botanist. Author of the first guide on prompt engineering, organizer of the first GenAI red-teaming competition, and currently building a stealth startup.",
   keywords: [
     "Sander Schulhoff",
     "Natural Language Processing",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Sander Schulhoff" }],
   openGraph: {
     title:
-      "Sander Schulhoff | NLP Researcher, LearnPrompting.com Founder & CS Student",
+      "Sander Schulhoff | Award-Winning AI Researcher, Entrepreneur & Botanist",
     description:
-      "Computer Science student at UMD, NLP researcher, and founder of LearnPrompting.com. Explore Sander's work in NLP, reinforcement learning, and UI creation.",
+      "Award-winning AI researcher, entrepreneur, and part-time botanist. Author of the first guide on prompt engineering, organizer of the first GenAI red-teaming competition, and currently building a stealth startup.",
     url: baseUrl,
     siteName: "Sander Schulhoff Portfolio",
     images: [
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Sander Schulhoff | NLP Researcher, LearnPrompting.com Founder & CS Student",
+      "Sander Schulhoff | Award-Winning AI Researcher, Entrepreneur & Botanist",
     description:
-      "Computer Science student at UMD, NLP researcher, and founder of LearnPrompting.com. Explore Sander's work in NLP, reinforcement learning, and UI creation.",
+      "Award-winning AI researcher, entrepreneur, and part-time botanist. Author of the first guide on prompt engineering, organizer of the first GenAI red-teaming competition, and currently building a stealth startup.",
     images: [`${baseUrl}/og-image.png`],
   },
   verification: {
