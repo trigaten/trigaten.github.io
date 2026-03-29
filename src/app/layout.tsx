@@ -91,8 +91,16 @@ export default function RootLayout({
     <html lang="en bg-white">
       <head>
         <meta httpEquiv="refresh" content="0; url=https://sanderschulhoff.com" />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script dangerouslySetInnerHTML={{ __html: "window.location.replace('https://sanderschulhoff.com')" }} />
+        <script dangerouslySetInnerHTML={{
+          __html: `(function(){
+  var p = window.location.pathname;
+  var dest = 'https://sanderschulhoff.com';
+  if (p === '/projects-research' || p.startsWith('/projects-research/')) {
+    dest = 'https://sanderschulhoff.com/research';
+  }
+  window.location.replace(dest);
+})();`
+        }} />
       </head>
       <body
         className={`${skModernBold.variable} ${skModernRegular.variable} ${skModernLight.variable} ${inter.className}`}
