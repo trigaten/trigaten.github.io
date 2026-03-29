@@ -89,6 +89,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en bg-white">
+      <head>
+        <meta httpEquiv="refresh" content="0; url=https://sanderschulhoff.com" />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script dangerouslySetInnerHTML={{ __html: "window.location.replace('https://sanderschulhoff.com')" }} />
+      </head>
       <body
         className={`${skModernBold.variable} ${skModernRegular.variable} ${skModernLight.variable} ${inter.className}`}
       >
